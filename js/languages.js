@@ -5,23 +5,29 @@ function loadlang(lng)
     switch (lng)
     {
         case "nl":
-            $.getJSON('language/nl.json', function(data) {
+            $.getJSON('languages/nl.json', function(data) {
                 fillIn(data);
                 // $('#contents').text(data.test);
             });
+            document.getElementById("concertagenda").style.display = "block";
+            document.getElementById("languages-concertagenda").style.display = "block";
             break;
         case "en":
-            $.getJSON('language/en.json', function(data) {
+            $.getJSON('languages/en.json', function(data) {
                 fillIn(data);
                 // $('#contents').text(data.test);
             });
+            document.getElementById("concertagenda").style.display = "none";
+            document.getElementById("languages-concertagenda").style.display = "none";
             break;
         case "fr":
-            $.getJSON('language/fr.json', function(data) {
+            $.getJSON('languages/fr.json', function(data) {
                 //do stuff with your data here
                 fillIn(data);
                 // $('#contents').text(data.test);
             });
+            document.getElementById("concertagenda").style.display = "none";
+            document.getElementById("languages-concertagenda").style.display = "none";
             break;
     }
 }
@@ -32,19 +38,19 @@ function loadlang(lng)
 //     switch (lng)
 //     {
 //         case "nl":
-//             $.getJSON('language/nl.json', function(data) {
+//             $.getJSON('languages/nl.json', function(data) {
 //                 fillIn(data);
 //                 // $('#contents').text(data.test);
 //             });
 //             break;
 //         case "en":
-//             $.getJSON('language/en.json', function(data) {
+//             $.getJSON('languages/en.json', function(data) {
 //                 fillIn(data);
 //                 // $('#contents').text(data.test);
 //             });
 //             break;
 //         case "fr":
-//             $.getJSON('language/fr.json', function(data) {
+//             $.getJSON('languages/fr.json', function(data) {
 //                 //do stuff with your data here
 //                 console.log(data.test);
 //                 fillIn(data);
@@ -71,3 +77,7 @@ $('#languages-dropdown-sm li').on('click', function() {
     $('#dropdown_sm_title').html($(this).find('a').html());
     $('#dropdown_title').html($(this).find('a').html());
 });
+
+// $('img').on("error", function() {
+//     $(this).attr('src', '/img/A_GEEN_VOORBLAD.png');
+// });
