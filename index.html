@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,25 +29,24 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
 
-    <!-- FLAGS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" />
 </head>
+
 <body id="page-top">
-<!--<div class="container h-100 p-0 m-0">-->
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Lodewijk De Vocht</a>
-                <ul class="navbar-nav mr-0 d-block d-sm-none">
-                    <li class="nav-item dropdown ">
-                        <a class="dropdown-toggle nav-link" id="inp_sm_impact" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon icon-envelope icon-white"></i>&nbsp;<span id="dropdown_sm_title">&#127760;&nbsp; NL</span><span class="caret"></span></a>
-                        <ul id="languages-dropdown-sm" class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" onclick="loadlang('nl')">&#127760; &nbsp; NL</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="loadlang('en')">&#127760; &nbsp; EN</a></li>
-                            <li><a class="dropdown-item" onclick="loadlang('fr')">&#127760; &nbsp; FR</a></li>
-                        </ul>
 
+                <ul class="navbar-nav mr-0 d-block d-sm-none pulling-right">
+                    <li class="nav-item dropdown">
+                        <label for="languages-mobile"></label>
+                        <select class="dropdown-toggle border-0 rounded bg-transparent" name="languages-mobile" id="languages-mobile" onchange="changeLanguage('languages-mobile')">
+                            <option class="dropdown-item btn" value="nl">&#127760; &nbsp; NL</option>
+                            <option class="dropdown-item btn" value="fr">&#127760; &nbsp; FR</option>
+                            <option class="dropdown-item btn" value="en">&#127760; &nbsp; EN</option>
+                            <option class="dropdown-item btn" value="de">&#127760; &nbsp; DE</option>
+                        </select>
                     </li>
                 </ul>
         <button
@@ -78,7 +78,7 @@
                          aria-labelledby="navbarDropdown">
                         <a class="languages-biografie dropdown-item js-scroll-trigger"
                            href="#page-top">
-                            Biografie
+                            <span class="languages">Biografie</span>
                         </a>
                         <a class="dropdown-item js-scroll-trigger"
                            href="#componist">
@@ -86,7 +86,7 @@
                         </a>
                         <a class="languages-dirigent dropdown-item js-scroll-trigger"
                            href="#de-dirigent">
-                            <span class="languages-de-dirigent">De dirigent</span>
+                            <span class="languages-dirigent">De dirigent</span>
                         </a>
                     </div>
                 </li>
@@ -134,71 +134,48 @@
                     </a>
                 </li>
 
-                <!-- dropdown  Language -->
-                <!--            <li class="nav-item dropdown">-->
-
-                <!--                <a class="dropdown-item" href="#" onclick="setLanguage('nl')">Nederlands</a>-->
-                <!--                <a class="dropdown-item" href="#" onclick="setLanguage('fr')">Français</a>-->
-                <!--            </li>-->
-
-<!--                <li class="nav-item dropdown">-->
-<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguage" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#127760; Language</a>-->
-<!--                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLanguage">-->
-<!--                        <a class="dropdown-item" href="#" onclick="loadlang('nl')">NL</a>-->
-<!--                        <a class="dropdown-item" href="#" onclick="loadlang('en')">EN</a>-->
-<!--                        <a class="dropdown-item" href="#" onclick="loadlang('fr')">FR</a>-->
-<!--                    </div>-->
-<!--                </li>-->
                 <li class="nav-item dropdown d-none d-sm-block">
-                    <a class="dropdown-toggle nav-link" id="inp_impact" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="icon icon-envelope icon-white"></i>&nbsp;<span id="dropdown_title">&#127760;&nbsp; NL</span><span class="caret"></span></a>
-                    <ul id="languages-dropdown" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onclick="loadlang('nl')">&#127760; &nbsp; NL</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadlang('en')">&#127760; &nbsp; EN</a></li>
-                        <li><a class="dropdown-item" onclick="loadlang('fr')">&#127760; &nbsp; FR</a></li>
-                    </ul>
-
+                    <label for="languages-not-mobile"></label>
+                    <select class="languages border-0 rounded bg-transparent" name="languages-not-mobile" id="languages-not-mobile" onchange="changeLanguage('languages-not-mobile')">
+                        <option class="dropdown-item nav-link btn" value="nl">&#127760; &nbsp; NL</option>
+                        <option class="dropdown-item  nav-link btn" value="fr">&#127760; &nbsp; FR</option>
+                        <option class="dropdown-item  nav-link btn" value="en">&#127760; &nbsp; EN</option>
+                        <option class="dropdown-item  nav-link btn" value="de">&#127760; &nbsp; DE</option>
+                    </select>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+<!-- END Navigation -->
 
 <!-- Masthead - Biografie -->
 <header class="masthead" id="biografie">
     <div class="container h-100">
         <div class="row h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-10 align-self-end">
-                <h2 class="text-white"><span class="text-uppercase font-weight-bold">LODEWIJK DE
-                    VOCHT</span>
+                <h2 class="text-white">
+                    <span class="text-uppercase font-weight-bold">L
+                        ODEWIJK DE VOCHT
+                    </span>
                     <br>
                     <span class="languages-biografie">Biografie</span> </h2>
-                <hr class="divider my-4"> </div>
+                <hr class="divider my-4">
+            </div>
             <div class="col-lg-10 align-self-baseline">
-                <p class="text-white">
-                    <span class="languages-p-1-biography">
-                        Lodewijk DE VOCHT (Antwerpen, 21 september
-                        1887 - ‘s Gravenwezel, 27 maart 1977) kreeg zijn vroegste
-                        muziekopleiding in het Antwerps Kathedraalkoor van Emile Wambach.
-                        Daarna studeerde hij aan het Koninklijk Vlaams Conservatorium van
-                        Antwerpen bij Jan Bacot (viool), Frans Lenaerts (piano), Lodewijk
-                        Mortelmans (harmonie, contrapunt en fuga) en opnieuw Wambach
-                        (orkestratie en compositie).
+                <p class="text-white mb-4">
+                    <span class="languages-biography-p-1">
+                        Lodewijk DE VOCHT ( Antwerpen, 1887 - 1977) was een van die onvergetelijke figuren die mede het Vlaamse en Belgische muziekleven van de eerste helft van de twintigste eeuw hebben bepaald.
+                    </span>
+                </p>
+                <p class="text-white mb-4">
+                    <span class="languages-biography-p-2">
+                        Op tienjarige leeftijd werd hij koorknaap in het kathedraalkoor van zijn geboortestad, waar hij een algemene muziekopleiding kreeg van Emiel Wambach en Karel Weymans. Reeds in 1899 werd hij als jongste violist opgenomen in de orkestklas van het Koninklijk Conservatorium. Na zijn studietijd zou De Vocht terugkeren naar het Conservatorium, in 1921 als leraar harmonie, in 1925 als titularis van de orkestklas (met leerlingen als Daniël Sternefeld, Jef Maes en André Cluytens) en in 1944 als directeur.
                     </span>
                 </p>
                 <p class="text-white mb-5">
-                    <span class="languages-p-2-biography">
-                        Lodewijk De Vocht keerde later naar het
-                        conservatorium terug eerst als leraar, later als directeur. Hij
-                        begon er in 1921 als harmonieleraar in opvolging van Edward
-                        Verheyden. In die functie gaf hij les aan o.a. Daniël Sternefeld,
-                        Jef Maes en André Cluytens. Vier jaar later werd hij ook
-                        verantwoordelijk voor de orkestklas. Op 12 december 1944 werd
-                        Lodewijk De Vocht, in moeilijke omstandigheden, aangesteld als
-                        conservatoriumdirecteur. Hij bekleedde die functie tot hij in 1952
-                        op pensioen ging. Als muziekpedagoog was Lodewijk De Vocht ook
-                        actief binnen Muzikale Jeugd van Antwerpen en hij was betrokken
-                        bij de Muziekkapel van Koningin Elisabeth.
+                    <span class="languages-biography-p-3">
+                        Als muziekpedagoog was Lodewijk De Vocht oprichter van Jeugd en Muziek Antwerpen en directeur van de Muziekkapel van Koningin Elisabeth.
                     </span>
                 </p>
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="#componist"><span class="languages-componist">Componist</span></a>
@@ -214,38 +191,25 @@
         <div class="row justify-content-center">
             <div class="col-lg-10 text-center">
                 <h2 class="text-white mt-0"><span class="languages-componist">Componist</span></h2>
-                <hr class="divider light my-4">
-                <p class="text-white mb-5">
+                <hr class="divider border-warning my-4">
+                <p class="text-white mb-4">
                     <span class="languages-componist-p-1">
-                        Zijn eerste composities schreef Lodewijk
-                    De Vocht al op zijn zestiende (koorwerken, liederen en de cantate
-                    Groeninghe). Hij zou overwegend vocale muziek blijven schrijven,
-                    al componeerde hij in het begin van zijn carrière enkele frisse
-                    symfonische gedichten, zoals Dageraad (1907) en In Ballingschap
-                    (1915). Op latere leeftijd ook nog concerto’s voor viool (1944),
-                    cello (1955) en blokfluit (1957). Lodewijk De Vochts meest
-                    originele composities zijn voor koor bestemd: virtuoze, soms
-                    woordloze koorstudies en koorsymfonieën, zoals Grote Symfonie voor
-                    gemengd koor en orkest (1932) en Vier studies voor gemengd koor.
-                    Nog voor koor schreef hij ook religieuze muziek en cantates:
-                    Lofzang aan Antwerpen; Volkenhulde (voor de Wereldtentoonstelling
-                    in 1930); Scaldis Aetema (1966) en het lyrisch zangspel Primavera
-                    (1962 - 1967). Tenslotte is hij ook de auteur van liederen (op
-                    teksten van Gezelle, Simons, Cuppens, Peleman e.v.a.), kamermuziek
-                    (Trio voor houtblazers, 1955) en solowerken voor piano en gitaar.
+             De Vocht heeft een omvangrijk oeuvre met romantische en vaak vitalistische inspiratie nagelaten. Zijn werk omvat missen, motetten, liederen en psalmen, symfonische gedichten en cantates, concerti voor viool, cello en blokfluit, kamermuziek, solowerken voor piano en gitaar, alsook toneelmuziek.
                     </span>
                 </p>
-                <br>
-                <p class="text-white mb-5">
+<!--                <br>-->
+                <p class="text-white mb-4">
                     <span class="languages-componist-p-2">
-                        De Vocht heeft een omvangrijk oeuvre van
-                    neoromantische inspiratie nagelaten. Het omvat symfonische
-                    gedichten en cantates, kamermuziek, concerti voor viool, cello en
-                    blokfluit, solowerken voor viool, piano, blokfluit en gitaar,
-                    missen, motetten, liederen en hymnen alsook toneelmuziek.
-                    </span>  </p>
+                        Zijn eerste composities schreef Lodewijk De Vocht al op zijn zestiende (koorwerken, liederen en de cantate Groeninghe). Hij zou overwegend vocale muziek blijven schrijven, met o.m. Jaarkrans van Geestelijke Liederen rond den Haard (1909-1935), zeven Latijnse missen, XIV Cantica, Duo Cantus Mariani, Te Deum (1934), talrijke kerstliederen, Psalmen voor Volkszang (1959-1964) en vele andere liederen (op teksten van Gezelle, Simons, Cuppens, Peleman e.v.a.). Ook zijn profane muziek baadt vaak in een mystieke sfeer. Lodewijk De Vochts meest originele composities zijn voor koor bestemd: virtuoze, soms woordloze koorstudies en koorsymfonieën, zoals zijn Symfonie voor groot orkest en koren (1932) en vier studies voor gemengd koor. Andere grote koorwerken, met orkestbegeleiding, zijn o.m. Volkenhulde (voor de Wereldtentoonstelling in 1930); Scaldis Aeterna (1966) en het lyrisch zangspel Primavera (1962-1965).
+                    </span>
+                </p>
+                <p class="text-white mb-5">
+                    <span class="languages-componist-p-3">
+                        Ook op het domein van de instrumentale muziek liet De Vocht zich niet onbetuigd. Zo componeerde hij in het begin van zijn carrière enkele frisse symfonische gedichten, zoals Dageraad (1906) en In Ballingschap (1914) en op latere leeftijd concerto’s voor viool (1944), cello (1955) en blokfluit (1957). Tenslotte is hij ook de auteur van kamermuziek (bv. Landelijk Trio voor houtblazers, 1955) en van solowerken voor piano en gitaar.
+                    </span>
+                </p>
                 <a class="btn btn-light btn-xl js-scroll-trigger" href="#de-dirigent">
-                    <span class="languages-de-dirigent">De
+                    <span class="languages-dirigent">De
                     dirigent</span></a> </div>
         </div>
     </div>
@@ -257,31 +221,29 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-10 align-self-end">
-                <h2 class="text-white mt-0"><span class="languages-dirigent"> De dirigent </span></h2>
+                <h2 class="text-white mt-0"><span class="languages-dirigent">Dirigent </span></h2>
                 <hr class="divider my-4"> </div>
             <div class="col-lg-10 align-self-baseline">
                 <p class="text-white mb-4">
-                    <span class="languages-dirigent-p-1">Naast zijn activiteiten als componist
-                    bouwde Lodewijk De Vocht ook een grote carrière als dirigent uit.
-                    Als violist in het orkest van de Maatschappij der Nieuwe Concerten
-                    had hij gewerkt onder de leiding van o.a. Gustav Mahler, Richard
-                    Strauss, Hans Richter en Felix Weingartner. In 1913 volgde hij
-                    Wambach op als kapelmeester van de Antwerpse kathedraal; in 1915
-                    werd hij dirigent van het vrouwenkoor van Constance Teichmann en
-                    Amanda Schnitzler-Selb, dat hij een jaar later uitbouwde tot het
-                    gemengd koor Chorale Caecilia; in 1921 verving hij Lodewijk
-                    Mortelmans als dirigent van de Nieuwe Concerten; en in 1935 werd
-                    hij dirigent van de Antwerpse conservatoriumconcerten. Met de
-                    Chorale Caecilia bracht hij jaarlijks de Mattheuspassie en samen
-                    met het orkest van de Nieuwe Concerten zorgde hij voor
-                    baanbrekende uitvoeringen van Les Euménides van Darius Milhaud en
-                    Jeanne d’Arc au bûcher van Arthur Honegger, twee componisten met
-                    wie hij nauw samenwerkte. Met een veertigtal uitvoeringen van
-                    Jeanne d’Arc, tot in Parijs en op de Hollandfestivals van 1946 en
-                    1947 toe, zou hij de belangrijkste verdediger van dit werk worden.
-                    In 1943 zette hij Honeggers meesterwerk ook op plaat voor His
-                    Master’s Voice en in 1960 dirigeerde hij het werk in een
-                        rechtstreekse Eurovisie-uitzending. </span></p>
+                    <span class="languages-dirigent-p-1">
+                        Naast zijn activiteiten als componist bouwde Lodewijk De Vocht ook een grote carrière als dirigent uit. Als violist in het orkest van de Maatschappij der Nieuwe Concerten had hij gespeeld onder de leiding van inspirerende dirigenten als Gustav Mahler, Richard Strauß, Hans Richter, Bruno Walter en Felix Weingartner. In 1912 volgde de jonge De Vocht Wambach op als kapelmeester van de Antwerpse kathedraal.
+                    </span>
+                </p>
+                <p class="text-white mb-4">
+                    <span class="languages-dirigent-p-2">
+                        In 1915 werd hem het vrouwenkoor van Constance Teichmann en Amanda Schnitzler-Selb toevertrouwd, dat hij een jaar later uitbouwde tot het gemengd koor Chorale Caecilia, waarmee hij al spoedig een stevige reputatie wist te verwerven. In 1921 volgde hij Lodewijk Mortelmans op als dirigent van de Nieuwe Concerten. Dank zij deze Nieuwe Concerten werd Antwerpen in de jaren 1921-1936 een belangrijke draaischijf van het Europese concertleven. Vanaf 1935 tenslotte dirigeerde De Vocht ook de Antwerpse Conservatoriumconcerten.
+                    </span>
+                </p>
+                <p class="text-white mb-4">
+                    <span class="languages-dirigent-p-3">
+                        Met zijn legendarische Chorale Caecilia bracht hij 40 jaar lang de Mattheuspassie ten gehore. De Vocht plaatste echter evenzeer hedendaags orkestwerk op het programma, o.m. van Stravinsky, Milhaud, Honegger, Ravel, Schmitt en Respighi.
+                    </span>
+                </p>
+                <p class="text-white mb-5">
+                    <span class="languages-dirigent-p-4">
+                        Samen met het orkest van de Nieuwe Concerten zorgde hij voor baanbrekende uitvoeringen van Les Euménides van Darius Milhaud en Jeanne d’Arc au Bûcher van Arthur Honegger. Met beide componisten werkte hij nauw samen. Met een veertigtal uitvoeringen van Jeanne d’Arc, tot in Parijs en op het Hollandfestival toe, zou hij de belangrijkste verdediger van dit werk worden. Op vraag van Honegger zelf legde De Vocht Honeggers meesterwerk op fonoplaat vast (His Master’s Voice) en in 1960 dirigeerde hij het werk in een rechtstreekse Eurovisie-uitzending.
+                    </span>
+                </p>
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="#componist"><span class="languages-componist">Componist</span></a>
             </div>
         </div>
@@ -302,119 +264,149 @@
                 <div class="flex-grow-1">
                     <img src="partituren/voorbladen/jezus_en_sint_janneken.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-                         alt="Jezus en Sint Janneken" height="340px" width="240px">
-                    <h4 class="text-dark mt-2"> Van Jesus en Sint Janneken </h4>
-                    <p class="p-text text-dark mt-1"> 3 kinderstemmen en/of 3 gelijke
-                        stemmen en/of piano/orgel, <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a class="text-primary"
-
-                                                                      href="http://www.luytt.com" target="_blank">LUYTT</a> </p>
+                         alt="Jezus en Sint Janneken"
+                         height="340px"
+                         width="240px"
+                    >
+                    <h4 class="text-dark mt-2">
+                        <span class="languages-jezus-en-sint-janneken">Van Jesus en Sint Janneken</span>
+                    </h4>
+                    <p class="p-text-small p-text text-dark mt-1">
+                        <span class="languages-jezus-en-sint-janneken-p">
+                            voor 3 kinderstemmen en/of 3 gelijke stemmen en/of piano/orgel, </span>
+                        <span class="languages-beschikbaar-bij"> beschikbaar bij </span>
+                        <a class="text-primary"
+                           href="http://www.luytt.com"
+                           target="_blank"
+                        ><span class="languages-luytt">LUYTT Music Editions</span>
+                        </a>
+                    </p>
                 </div>
-                <div> <a class="btn btn-primary" href="partituren/koormuziek/LME2018-01-040_LDV_van_Jesus_en_Sint_Janneken.pdf"
-
-                         target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!-- <a
-                                      class="btn btn-primary" 								href="https://www.muziekweb.nl/Link/BBX1041/Works-for-violin-and-orchestra"
-                                      target="_blank">								Beluister
-                                  </a> -->
-                    <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-primary"
-                       title="Geen opname beschikbaar"
-                       data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
-                <div class="flex-grow-1"> <img src="partituren/voorbladen/landelijke_suite.png"
-                                               onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-
-                                               alt="Landelijke Suite" height="340px" width="240px">
-                    <h4 class="text-dark mt-2"> Landelijke Suite </h4>
-                    <p class="p-text text-center text-dark mt-1"> voor gemengd koor, tekst Willem Gijssels,  <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
-                            class="text-primary" href="http://www.luytt.com" target="_blank">LUYTT
-                    </a> </p>
-                </div>
-                <div> <a class="btn btn-primary" href="partituren/koormuziek/LME2018-01-043_LDV_Landelijke_Suite.pdf"
-                         target="_blank"> <span class="languages-download">Download</span> </a>
-
-                    <!--              <button type="button" class="btn btn-primary"-->
-
-                    <!--                data-toggle="popover" title="Geen opname beschikbaar" data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">-->
-                    <!--                Beluister </button> -->
-                    <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-primary"
-                       title="Geen opname beschikbaar"
-                       data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
-                <div class="flex-grow-1"> <img class="text-center" src="partituren/voorbladen/in_te_speravi.png"
-                                               onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-                                               alt="In te speravi" height="340px" width="240px">
-                    <h4 class="text-center text-dark mt-2"> In te speravi </h4>
-                    <p class="p-text text-center text-dark mt-1"> 1, 2 of 4-stemmige
-                        zang, met of zonder piano/orgelbegeleiding, <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
-
-                                class="text-primary" href="http://www.luytt.com" target="_blank">LUYTT
-                        </a> </p> </div>
                 <div>
-                    <a class="btn btn-primary" href="partituren/koormuziek/LME2018-01-036_LDV_In_te_speravi.pdf"
-
-                       target="_blank"> <span class="languages-download">Download</span> </a>
-
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover"-->
-                    <!--                      title="Geen opname beschikbaar"-->
-                    <!--                      data-trigger="click"-->
-                    <!--                      data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."-->
-                    <!--              >Beluister </button>-->
-
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LME2018-01-040_LDV_van_Jesus_en_Sint_Janneken.pdf"
+                       target="_blank"
+                    >
+                        <span class="languages-download">
+                            Download
+                        </span>
+                    </a>
                     <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-primary"
+                       class="cannot-listen btn btn-primary"
                        title="Geen opname beschikbaar"
                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
+                        <span class="languages-beluister">Beluister</span>
                     </a>
-                    <!-- <button type="button" class="btn btn-primary mt-2">
-                                      <a class="text-light text-light-no-decoration"									href="https://www.muziekweb.nl/Link/BBX1041/Works-for-violin-and-orchestra"
-                                          target="_blank">Beluister</a>							</button> -->
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
-                <div class="flex-grow-1"> <img class="text-center" src="partituren/voorbladen/cantica.png"
-                                               onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-                                               alt="Cantica" height="340px" width="240px">
-                    <h4 class="text-center text-dark mt-2"> Cantica  </h4>
-                    <p class="p-text text-center text-dark mt-1"> voor 3 gelijke stemmen, met of zonder orgel,  <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
+                <div class="flex-grow-1">
+                    <img src="partituren/voorbladen/landelijke_suite.png"
+                         onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
+                         alt="Landelijke Suite"
+                         height="340px"
+                         width="240px"
+                    >
+                    <h4 class="text-dark mt-2">
 
-                            class="text-primary" href="http://www.luytt.com" target="_blank">LUYTT</a> </p>
+                        <span class="languages-landelijke-suite">
+                             Landelijke Suite
+                        </span>
+                    </h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-landelijke-suite-p">
+                             voor gemengd koor, tekst Willem Gijssels,
+                        </span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
+                    </p>
                 </div>
-                <div> <a class="btn btn-primary" href="partituren/koormuziek/LME2017-01-025_LDV_Cantica.pdf"
+                <div>
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LME2018-01-043_LDV_Landelijke_Suite.pdf"
+                       target="_blank">
+                        <span class="languages-download">Download</span>
+                    </a>
+                    <a tabindex="0"
+                       role="button"
+                       data-toggle="popover"
+                       data-trigger="focus"
+                       class="cannot-listen btn btn-primary"
+                       title="Geen opname beschikbaar"
+                       data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."
+                    >
+                        <span class="languages-beluister">
+                            Beluister
+                        </span>
+                    </a>
 
-                         target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!--              <button type="button" class="btn btn-primary"-->
-                    <!--                      data-toggle="popover" title="Geen opname beschikbaar" data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">-->
-                    <!--              Beluister </button>-->
+                </div>
+            </div>
 
-                    <button type="button" class="btn btn-primary">
-                        <a class="text-light text-light-no-decoration"
-                           href="https://www.youtube.com/playlist?list=PLYO_VANm6GDSf7pMJaWJrigd3fxfDkX72"
-                           target="_blank">Beluister</a>
-                    </button>
-                    <!--              <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"-->
-                    <!--                 class="btn btn-primary"-->
-                    <!--                 title="Geen opname beschikbaar"-->
-                    <!--                 data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">-->
-                    <!--                Beluister-->
-                    <!--              </a>-->
+            <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
+                <div class="flex-grow-1">
+                    <img class="text-center" src="partituren/voorbladen/in_te_speravi.png"
+                         onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
+                         alt="In te speravi" height="340px" width="240px">
+                    <h4 class="text-center text-dark mt-2"><span class="languages-in-te-speravi">In te speravi</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+
+                        <span class="languages-in-te-speravi-p-1">
+                            1, 2 of 4-stemmige zang, met of zonder piano/orgelbegeleiding,
+                        </span>
+                        <span class="languages-beschikbaar-bij"> beschikbaar bij</span>
+                        <a class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
+                    </p>
+                </div>
+                <div>
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LME2018-01-036_LDV_In_te_speravi.pdf"
+                       target="_blank">
+                        <span class="languages-download">Download</span>
+                    </a>
+
+                    <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
+                       class="cannot-listen
+                        btn btn-primary"
+                       title="Geen opname beschikbaar"
+                       data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
+                        <span class="languages-beluister">Beluister</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
+                <div class="flex-grow-1">
+                    <img class="text-center"
+                         src="partituren/voorbladen/cantica.png"
+                         onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
+                         alt="Cantica"
+                         height="340px"
+                         width="240px"
+                    >
+                    <h4 class="text-center text-dark mt-2"><span class="languages-cantica">Cantica</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-cantica-p-1">voor 3 gelijke stemmen, met of zonder orgel,</span><span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
+
+                            class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a> </p>
+                </div>
+                <div>
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LME2017-01-025_LDV_Cantica.pdf"
+                       target="_blank">
+                        <span class="languages-download">
+                            Download
+                        </span>
+                    </a>
+                    <a class="btn btn-primary"
+                       href="https://www.youtube.com/playlist?list=PLYO_VANm6GDSf7pMJaWJrigd3fxfDkX72"
+                       target="_blank"
+                    >
+                        <span class=languages-beluister>
+                            Beluister
+                        </span>
+                    </a>
                 </div>
             </div>
 
@@ -424,20 +416,30 @@
                          src="partituren/voorbladen/duo_cantus_mariani.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
                          alt="Duo cantus mariani" height="340px" width="240px">
-                    <h4 class="text-center text-dark mt-2"> Duo Cantus Mariani  </h4>
-                    <p class="p-text text-center text-dark mt-1"> voor 3 gelijke stemmen, met of zonder orgel, <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
-
-                            class="text-primary" href="http://www.luytt.com" target="_blank">LUYTT</a> </p>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-duo-cantus-mariani">Duo Cantus Mariani</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                         <span class="languages-duo-cantus-mariani-p-1">voor 3 gelijke stemmen, met of zonder orgel,</span>
+                         <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
+                    </p>
                 </div>
-                <div> <a class="btn btn-primary" href="partituren/koormuziek/LME%202017-01-024_LDV_Duo_Cantus_Mariani.pdf"
+                <div>
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LME%202017-01-024_LDV_Duo_Cantus_Mariani.pdf"
+                       target="_blank">
+                        <span class="languages-download">
+                            Download
+                        </span>
+                    </a>
+                    <a class="btn btn-primary"
+                       href="https://youtu.be/ifU4Xctmu1o"
+                       target="_blank"
+                    >
+                        <span class=languages-beluister>
+                            Beluister
+                        </span>
+                    </a>
 
-                         target="_blank"> <span class="languages-download">Download</span> </a>
-                    <button type="button" class="btn btn-primary">
-                        <a class="text-light text-light-no-decoration"
-                           href="https://youtu.be/ifU4Xctmu1o"
-                           target="_blank">
-                            Beluister</a>
-                    </button>
                 </div>
             </div>
 
@@ -452,34 +454,27 @@
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2"> Missa Pastorum A+B </h4>
-                    <p class="p-text text-center text-dark mt-1"> koor en orgel, <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
-
-                            class="text-primary" href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-3/" target="_blank">Musikproduktion Höflich München</a> </p>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-missa-pastorum-a-en-b">Missa Pastorum A+B</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-missa-pastorum-a-en-b-p-1">voor koor en orgel,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a class="text-primary" href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-3/" target="_blank">Musikproduktion Höflich München</a>
+                    </p>
                 </div>
                 <div>
-                    <a
-                            class="btn btn-primary"
-                            href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-3/"
-                            target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!--            <button-->
-                    <!--                    type="button"-->
-                    <!--                    class="btn btn-primary"-->
-                    <!--                    data-toggle="popover"-->
-                    <!--                    title="Geen opname beschikbaar"-->
-                    <!--                    data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">-->
-                    <!--              Beluister </button>-->
+                    <a class="btn btn-primary"
+                       href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-3/"
+                       target="_blank"
+                    >
+                        <span class="languages-download">Download</span>
+                    </a>
 
-                    <!--            <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"-->
-                    <!--               class="btn btn-primary"-->
-                    <!--               title="Geen opname beschikbaar"-->
-                    <!--               data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">-->
-                    <!--              Beluister-->
-                    <!--            </a>-->
-                    <button type="button" class="btn btn-primary">
-                        <a class="text-light text-light-no-decoration"	href="https://www.youtube.com/watch?v=fnJLwACIzQk"
-                           target="_blank">Beluister</a>
-                    </button>
+                    <a class="btn btn-primary"
+                       href="https://www.youtube.com/watch?v=fnJLwACIzQk"
+                       target="_blank"
+                    >
+                        <span class=languages-beluister>Beluister</span>
+                    </a>
                 </div>
             </div>
 
@@ -494,32 +489,30 @@
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2"> Missa in honorem angelorum  </h4>
-                    <p class="p-text text-center text-dark mt-1"> 3-stemmig koor en orgel, <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
-
-                            class="text-primary" href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-4/ " target="_blank">Musikproduktion Höflich München</a> </p>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-missa-in-honorem-angelorem">Missa in honorem angelorum</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-missa-in-honorem-angelorem-p-1">3-stemmig koor en orgel,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a class="text-primary" href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-4/ " target="_blank">Musikproduktion Höflich München</a>
+                    </p>
                 </div>
                 <div>
-                    <a
-                            class="btn btn-primary"
-                            href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-4/"
-                            target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover"-->
-                    <!--                      title="Geen opname beschikbaar"-->
-                    <!--                      data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">-->
-                    <!--                Beluister </button>-->
-                    <button
-                            type="button"
-                            class="btn btn-primary">
-                        <a class="text-light text-light-no-decoration"
-                           href="https://youtu.be/U0yNy9_dST0"
-                           target="_blank">
+                    <a class="btn btn-primary"
+                       href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-4/"
+                       target="_blank">
+                        <span class="languages-download">
+                            Download
+                        </span>
+                    </a>
+
+                    <a class="btn btn-primary"
+                       href="https://youtu.be/U0yNy9_dST0"
+                       target="_blank"
+                    >
+                        <span class=languages-beluister>
                             Beluister
-                        </a>
-                    </button>
+                        </span>
+                    </a>
                 </div>
             </div>
 
@@ -534,41 +527,63 @@
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2"> Missa in honorem Sti Josephi </h4>
-                    <p class="p-text text-center text-dark mt-1"> SATB en orgel,  <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
-
-                            class="text-primary" href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-5/" target="_blank">Musikproduktion Höflich München</a> </p>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-missa-in-honorem-sti-josephi">Missa in honorem Sti Josephi</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-missa-in-honorem-sti-josephi-p-1">SATB en orgel,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a class="text-primary" href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-5/" target="_blank">Musikproduktion Höflich München</a>
+                    </p>
                 </div>
                 <div>
-                    <a
-                            class="btn btn-primary"
-                            href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-5/"
-                            target="_blank"> <span class="languages-download">Download</span> </a>
+                    <a class="btn btn-primary"
+                       href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-5/"
+                       target="_blank">
+                        <span class="languages-download">Download</span> </a>
                     <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-primary"
+                       class="cannot-listen btn btn-primary"
                        title="Geen opname beschikbaar"
                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
+                        <span class="languages-beluister">Beluister</span>
                     </a>
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover"-->
-                    <!--                      title="Geen opname beschikbaar"-->
-                    <!--                      data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">-->
-                    <!--                Beluister-->
-                    <!--              </button>-->
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
+                <div
+                        class="flex-grow-1">
+                    <img
+                            class="text-center"
+                            src="partituren/voorbladen/kerstliederen_compleet.png"
+                            onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
+                            alt="Kerstliederen"
+                            height="340px"
+                            width="240px"
+                    >
+                    <h4 class="text-center text-dark mt-2"> <span class="languages-kerstliederen">Kerstliederen</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-kerstliederen-p-1">bundel kerstliederen voor diverse bezettingen,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a> (
+                        <span class="languages-1-nummber-bij">1 nummer bij</span>
+                        <a class="text-primary" href="http://www.lantromusic.be" target="_blank">Lantro</a>)
+                    </p>
+                </div>
+                <div>
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LME_Kerstliederen_compleet.pdf"
+                       target="_blank"> <span class="languages-download">Download</span> </a>
 
 
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary">-->
-                    <!--                <a class="text-light text-light-no-decoration"-->
-                    <!--                   href="https://www.muziekweb.nl/Link/DBX10598/Memorare-in-flanders-field-vol-76?WorkID=U00001425347"-->
-                    <!--                   target="_blank">-->
-                    <!--                  Beluister-->
-                    <!--                </a>-->
-                    <!--              </button>-->
+                    <a class="btn btn-primary"
+                       href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQwC6OPs7h3eeiz9i-WWn0q"
+                       target="_blank"
+                    >
+                        <span class=languages-beluister>
+                            Beluister
+                        </span>
+                    </a>
+
+
                 </div>
             </div>
 
@@ -583,61 +598,34 @@
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2">Fabelen boek 1</h4>
-                    <p class="p-text text-center text-dark mt-1"> voor 1 of meerdere stemmen met begeleiding, <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
-
-                            class="text-primary" href="http://www.luytt.com" target="_blank">LUYTT</a> </p>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-fabelen-boek-1">Fabelen boek 1</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-fabelen-boek-1-p-1">voor 1 of meerdere stemmen met begeleiding,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
+                    </p>
                 </div>
                 <div>
 
-                    <a class="btn btn-primary" href="partituren/koormuziek/LME_LDV_Fabelen_boek_1.pdf"
-
-                       target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!--                            <a-->
-                    <!--                                    class="btn btn-primary"-->
-                    <!--                                    href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-5/"-->
-                    <!--                                    target="_blank"> <span class="languages-download">Download</span> </a>-->
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover"-->
-                    <!--                      title="Nog geen partituur beschikbaar"-->
-                    <!--                      data-content="Partituur momenteel nog niet beschikbaar.">-->
-                    <!--                <span class="languages-download">Download</span>-->
-                    <!--              </button>-->
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary">-->
-                    <!--                <a class="text-light text-light-no-decoration"-->
-                    <!--                   href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQwC6OPs7h3eeiz9i-WWn0q"-->
-                    <!--                   target="_blank">-->
-                    <!--                  Beluister-->
-                    <!--                </a>-->
-                    <!--              </button>-->
-
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover"-->
-                    <!--                      title="Geen opname beschikbaar"-->
-                    <!--                      data-trigger="click"-->
-                    <!--                      data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."-->
-                    <!--              >Beluister </button>-->
-
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LME_LDV_Fabelen_boek_1.pdf"
+                       target="_blank">
+                        <span class="languages-download">Download</span>
+                    </a>
 
                     <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-primary"
+                       class="cannot-listen
+                        btn btn-primary"
                        title="Geen opname beschikbaar"
                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
+                        <span class="languages-beluister">Beluister</span>
                     </a>
 
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
-                <div
-                        class="flex-grow-1">
+                <div class="flex-grow-1">
                     <img
                             class="text-center"
                             src="partituren/voorbladen/fabelen_boek_2.png"
@@ -646,52 +634,26 @@
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2">Fabelen boek 2</h4>
-                    <p class="p-text text-center text-dark mt-1"> voor 1 of meerdere stemmen met begeleiding, <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
-
-                            class="text-primary" href="http://www.luytt.com" target="_blank">LUYTT</a> </p>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-fabelen-boek-2">Fabelen boek 2</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-fabelen-boek-2-p-1">voor 1 of meerdere stemmen met begeleiding,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
+                    </p>
                 </div>
                 <div>
 
-                    <a class="btn btn-primary" href="partituren/koormuziek/LME_LDV_Fabelen_boek_2.pdf"
-
-                       target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!--                            <a-->
-                    <!--                                    class="btn btn-primary"-->
-                    <!--                                    href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-5/"-->
-                    <!--                                    target="_blank"> <span class="languages-download">Download</span> </a>-->
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover"-->
-                    <!--                      title="Nog geen partituur beschikbaar"-->
-                    <!--                      data-content="Partituur momenteel nog niet beschikbaar.">-->
-                    <!--                <span class="languages-download">Download</span>-->
-                    <!--              </button>-->
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary">-->
-                    <!--                <a class="text-light text-light-no-decoration"-->
-                    <!--                   href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQwC6OPs7h3eeiz9i-WWn0q"-->
-                    <!--                   target="_blank">-->
-                    <!--                  Beluister-->
-                    <!--                </a>-->
-                    <!--              </button>-->
-
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover"-->
-                    <!--                      title="Geen opname beschikbaar"-->
-                    <!--                      data-trigger="click"-->
-                    <!--                      data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."-->
-                    <!--              >Beluister </button>-->
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LME_LDV_Fabelen_boek_2.pdf"
+                       target="_blank"> <span class="languages-download">Download</span>
+                    </a>
 
                     <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-primary"
+                       class="cannot-listen
+                        btn btn-primary"
                        title="Geen opname beschikbaar"
                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
+                        <span class="languages-beluister">Beluister</span>
                     </a>
 
                 </div>
@@ -708,53 +670,26 @@
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2">Fabelen boek 3</h4>
-                    <p class="p-text text-center text-dark mt-1"> voor 1 of meerdere stemmen met begeleiding, <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
+                    <h4 class="text-center text-dark mt-2"><span class="languages-fabelen-boek-3">Fabelen boek 3</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-fabelen-boek-3-p-1">voor 1 of meerdere stemmen met begeleiding,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
 
-                            class="text-primary" href="http://www.luytt.com" target="_blank">LUYTT</a> </p>
+                            class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a> </p>
                 </div>
                 <div>
 
-                    <a class="btn btn-primary" href="partituren/koormuziek/LME_LDV_Fabelen_boek_3.pdf"
-
-                       target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!--                            <a-->
-                    <!--                                    class="btn btn-primary"-->
-                    <!--                                    href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-5/"-->
-                    <!--                                    target="_blank"> <span class="languages-download">Download</span> </a>-->
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover"-->
-                    <!--                      title="Nog geen partituur beschikbaar"-->
-                    <!--                      data-content="Partituur momenteel nog niet beschikbaar.">-->
-                    <!--                <span class="languages-download">Download</span>-->
-                    <!--              </button>-->
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary">-->
-                    <!--                <a class="text-light text-light-no-decoration"-->
-                    <!--                   href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQwC6OPs7h3eeiz9i-WWn0q"-->
-                    <!--                   target="_blank">-->
-                    <!--                  Beluister-->
-                    <!--                </a>-->
-                    <!--              </button>-->
-
-                    <!--              <button-->
-                    <!--                      tabindex="0"-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover"-->
-                    <!--                      title="Geen opname beschikbaar"-->
-                    <!--                      data-trigger="focus"-->
-                    <!--                      data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."-->
-                    <!--              >Beluister </button>-->
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LME_LDV_Fabelen_boek_3.pdf"
+                       target="_blank">
+                        <span class="languages-download">Download</span>
+                    </a>
 
                     <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-primary"
+                       class="cannot-listen btn btn-primary"
                        title="Geen opname beschikbaar"
                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
+                        <span class="languages-beluister">Beluister</span>
                     </a>
 
                 </div>
@@ -763,67 +698,18 @@
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
                 <div
                         class="flex-grow-1">
-                    <img
-                            class="text-center"
-                            src="partituren/voorbladen/kerstliederen_compleet.png"
-                            onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-                            alt="Kerstliederen"
-                            height="340px"
-                            width="240px"
-                    >
-                    <h4 class="text-center text-dark mt-2"> Kerstliederen</h4>
-                    <p class="p-text text-center text-dark mt-1"> bundel kerstliederen voor diverse bezettingen, <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
-
-                            class="text-primary" href="http://www.luytt.com" target="_blank">LUYTT</a> ( 1 nummer bij <a
-
-                            class="text-primary" href="http://www.lantromusic.be" target="_blank">Lantro</a>)
-
-                    </p>
-                </div>
-                <div>
-                    <a
-                            class="btn btn-primary"
-                            href="partituren/koormuziek/LME_Kerstliederen_compleet.pdf"
-                            target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover"-->
-                    <!--                      title="Nog geen partituur beschikbaar"-->
-                    <!--                      data-content="Partituur momenteel nog niet beschikbaar.">-->
-                    <!--                <span class="languages-download">Download</span>-->
-                    <!--              </button>-->
-                    <button
-                            type="button"
-                            class="btn btn-primary">
-                        <a class="text-light text-light-no-decoration"
-                           href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQwC6OPs7h3eeiz9i-WWn0q"
-                           target="_blank">
-                            Beluister
-                        </a>
-                    </button>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
-                <div
-                        class="flex-grow-1">
-                    <img
-                            class="text-center"
+                    <img class="text-center"
                             src="partituren/voorbladen/Psalmen_volkszang_pasen.png"
                             onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
                             alt="psalmen volkszang pasen"
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2"> Psalmen voor volkszang </h4>
-                    <p
-                            class="p-text text-center text-dark mt-1">
-                        in Vasten en Paastijd, <span class="languages-beschikbaar-bij">beschikbaar bij</span>
-                        <a class="text-primary"
-                           href="http://www.luytt.com"
-                           target="_blank">LUYTT
-                        </a>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-psalmen-voor-volkszang-pasen">Psalmen voor volkszang</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="laguages-psalmen-voor-volkszang-pasen-p-1">in Vasten en Paastijd,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
 
                     </p>
                 </div>
@@ -832,32 +718,18 @@
                             class="btn btn-primary"
                             href="partituren/koormuziek/LDV_PSALMEN_PASEN.pdf"
                             target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!--                            <button-->
-                    <!--                                    type="button"-->
-                    <!--                                    class="btn btn-primary"-->
-                    <!--                                    data-toggle="popover"-->
-                    <!--                                    title="Nog geen partituur beschikbaar"-->
-                    <!--                                    data-content="Partituur momenteel nog niet beschikbaar.">-->
-                    <!--                              <span class="languages-download">Download</span>-->
-                    <!--                            </button>-->
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary">-->
-                    <!--                <a class="text-light text-light-no-decoration"-->
-                    <!--                   href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQwC6OPs7h3eeiz9i-WWn0q"-->
-                    <!--                   target="_blank">-->
-                    <!--                  Beluister-->
-                    <!--                </a>-->
-                    <!--              </button>-->
-                    <button
+                    <a
                             tabindex="0"
                             type="button"
-                            class="btn btn-primary"
+                            class="cannot-listen
+                             btn btn-primary"
                             data-toggle="popover"
                             title="Geen opname beschikbaar"
                             data-trigger="focus"
                             data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."
-                    >Beluister </button>
+                    >
+                        <span class="languages-beluister">Beluister</span>
+                    </a>
                 </div>
             </div>
 
@@ -872,48 +744,36 @@
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2"> Psalmen voor volkszang </h4>
-                    <p
-                            class="p-text text-center text-dark mt-1">
-                        in Advent en Kersttijd, <span class="languages-beschikbaar-bij">beschikbaar bij</span>
-                        <a class="text-primary"
-                           href="http://www.luytt.com"
-                           target="_blank">LUYTT
-                        </a>
-
+                    <h4 class="text-center text-dark mt-2"><span class="languages-psalmen-voor-volkszang-kerst">Psalmen voor volkszang</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-psalmen-voor-volkszang-kerst-p-1">in Advent en Kersttijd,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div>
                     <a
                             class="btn btn-primary"
                             href="partituren/koormuziek/LDV_PSALMEN_KERST.pdf"
-                            target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover"-->
-                    <!--                      title="Nog geen partituur beschikbaar"-->
-                    <!--                      data-content="Partituur momenteel nog niet beschikbaar.">-->
-                    <!--                <span class="languages-download">Download</span>-->
-                    <!--              </button>-->
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary">-->
-                    <!--                <a class="text-light text-light-no-decoration"-->
-                    <!--                   href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQwC6OPs7h3eeiz9i-WWn0q"-->
-                    <!--                   target="_blank">-->
-                    <!--                  Beluister-->
-                    <!--                </a>-->
-                    <!--              </button>-->
-                    <button
+                            target="_blank"
+                    >
+                        <span class="languages-download">
+                            Download
+                        </span>
+                    </a>
+
+                    <a
                             tabindex="0"
                             type="button"
-                            class="btn btn-primary"
+                            class="cannot-listen
+                             btn btn-primary"
                             data-toggle="popover"
                             title="Geen opname beschikbaar"
                             data-trigger="focus"
                             data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."
-                    >Beluister </button>
+                    >
+                        <span class="languages-beluister">Beluister</span>
+                    </a>
                 </div>
             </div>
 
@@ -928,41 +788,33 @@
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2"> Psalmen voor volkszang </h4>
-                    <p class="p-text text-center text-dark mt-1">
+                    <h4 class="text-center text-dark mt-2"><span class="languages-psalmen-voor-volkszang-geel">Psalmen voor volkszang</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-psalmen-voor-volkszang-geel-p-1"></span>
                         <span class="languages-beschikbaar-bij">beschikbaar bij</span>
-                        <a class="text-primary"
-                           href="http://www.luytt.com"
-                           target="_blank">LUYTT
-                        </a>
+                        <a class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
 
                     </p>
                 </div>
                 <div>
-                    <a
-                            class="btn btn-primary"
-                            href="partituren/koormuziek/LDV_PSALMEN_GEEL.pdf"
-                            target="_blank"> <span class="languages-download">Download</span> </a>
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LDV_PSALMEN_GEEL.pdf"
+                       target="_blank">
+                        <span class="languages-download">
+                            Download
+                        </span>
+                    </a>
 
-                    <!--              </button>-->
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary">-->
-                    <!--                <a class="text-light text-light-no-decoration"-->
-                    <!--                   href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQwC6OPs7h3eeiz9i-WWn0q"-->
-                    <!--                   target="_blank">-->
-                    <!--                  Beluister-->
-                    <!--                </a>-->
-                    <!--              </button>-->
-                    <button
-                            tabindex="0"
-                            type="button"
-                            class="btn btn-primary"
-                            data-toggle="popover"
-                            title="Geen opname beschikbaar"
-                            data-trigger="focus"
-                            data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."
-                    >Beluister </button>
+                    <a tabindex="0"
+                       type="button"
+                       class="cannot-listen btn btn-primary"
+                       data-toggle="popover"
+                       title="Geen opname beschikbaar"
+                       data-trigger="focus"
+                       data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."
+                    >
+                        <span class="languages-beluister">Beluister</span>
+                    </a>
                 </div>
             </div>
 
@@ -977,41 +829,32 @@
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2"> Pastorale voor koor </h4>
-                    <p class="p-text text-center text-dark mt-1">
+                    <h4 class="text-center text-dark mt-2"><span class="languages-pastorale-voor-koor">Pastorale voor koor</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-pastorale-voor-koor-p-1"></span>
                         <span class="languages-beschikbaar-bij">beschikbaar bij</span>
-                        <a class="text-primary"
-                           href="http://www.luytt.com"
-                           target="_blank">LUYTT
-                        </a>
-
+                        <a class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div>
-                    <a
-                            class="btn btn-primary"
-                            href="partituren/koormuziek/LDV_PASTORALE.pdf"
-                            target="_blank"> <span class="languages-download">Download</span> </a>
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LDV_PASTORALE.pdf"
+                       target="_blank">
+                        <span class="languages-download">
+                            Download
+                        </span>
+                    </a>
 
-                    <!--              </button>-->
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary">-->
-                    <!--                <a class="text-light text-light-no-decoration"-->
-                    <!--                   href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQwC6OPs7h3eeiz9i-WWn0q"-->
-                    <!--                   target="_blank">-->
-                    <!--                  Beluister-->
-                    <!--                </a>-->
-                    <!--              </button>-->
-                    <button
-                            tabindex="0"
-                            type="button"
-                            class="btn btn-primary"
-                            data-toggle="popover"
-                            title="Geen opname beschikbaar"
-                            data-trigger="focus"
-                            data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."
-                    >Beluister </button>
+                    <a tabindex="0"
+                       type="button"
+                       class="cannot-listen btn btn-primary"
+                       data-toggle="popover"
+                       title="Geen opname beschikbaar"
+                       data-trigger="focus"
+                       data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."
+                    >
+                        <span class="languages-beluister">Beluister</span>
+                    </a>
                 </div>
             </div>
 
@@ -1026,43 +869,34 @@
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2"> Missa brevis </h4>
-                    <p class="p-text text-center text-dark mt-1">
-                        tweestemmig, <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-missa-brevis-2-stemmig">Missa brevis</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-missa-brevis-2-stemmig-p-1">tweestemmig,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
                         <a class="text-primary"
                            href="http://www.luytt.com"
-                           target="_blank">LUYTT
+                           target="_blank"><span class="languages-luytt">LUYTT Music Editions</span>
                         </a>
 
                     </p>
                 </div>
                 <div>
-                    <a
-                            class="btn btn-primary"
-                            href="partituren/koormuziek/LDV_MISSA_BREVIS_2.pdf"
-                            target="_blank"> <span class="languages-download">Download</span> </a>
+                    <a class="btn btn-primary"
+                       href="partituren/koormuziek/LDV_MISSA_BREVIS_2.pdf"
+                       target="_blank"> <span class="languages-download">Download</span>
+                    </a>
 
-                    <!--              </button>-->
-                    <button
-                            type="button"
-                            class="btn btn-primary">
-                        <a class="text-light text-light-no-decoration"
-                           href="https://www.youtube.com/playlist?list=PLYO_VANm6GDSwAZ8yU9h8aXJWv5vYwNOl"
-                           target="_blank">
+                    <a class="btn btn-primary"
+                       href="https://www.youtube.com/playlist?list=PLYO_VANm6GDSwAZ8yU9h8aXJWv5vYwNOl"
+                       target="_blank"
+                    >
+                        <span class=languages-beluister>
                             Beluister
-                        </a>
-                    </button>
-                    <!--                            <button-->
-                    <!--                                    tabindex="0"-->
-                    <!--                                    type="button"-->
-                    <!--                                    class="btn btn-primary"-->
-                    <!--                                    data-toggle="popover"-->
-                    <!--                                    title="Geen opname beschikbaar"-->
-                    <!--                                    data-trigger="focus"-->
-                    <!--                                    data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."-->
-                    <!--                            >Beluister </button>-->
+                         </span>
+                    </a>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
                 <div
                         class="flex-grow-1">
@@ -1074,14 +908,11 @@
                             height="340px"
                             width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2"> Missa brevis </h4>
-                    <p class="p-text text-center text-dark mt-1">
-                        vierstemmig, <span class="languages-beschikbaar-bij">beschikbaar bij</span>
-                        <a class="text-primary"
-                           href="http://www.luytt.com"
-                           target="_blank">LUYTT
-                        </a>
-
+                    <h4 class="text-center text-dark mt-2"><span class="languages-missa-brevis-4-stemmig">Missa brevis</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-missa-brevis-4-stemmig-p-1">vierstemmig,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a class="text-primary" href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div>
@@ -1090,25 +921,15 @@
                             href="partituren/koormuziek/LDV_MISSA_BREVIS_4.pdf"
                             target="_blank"> <span class="languages-download">Download</span> </a>
 
-                    <!--              </button>-->
-                    <button
-                            type="button"
-                            class="btn btn-primary">
-                        <a class="text-light text-light-no-decoration"
-                           href="https://www.youtube.com/playlist?list=PLYO_VANm6GDSwAZ8yU9h8aXJWv5vYwNOl"
-                           target="_blank">
-                            Beluister
-                        </a>
-                    </button>
-                    <!--                            <button-->
-                    <!--                                    tabindex="0"-->
-                    <!--                                    type="button"-->
-                    <!--                                    class="btn btn-primary"-->
-                    <!--                                    data-toggle="popover"-->
-                    <!--                                    title="Geen opname beschikbaar"-->
-                    <!--                                    data-trigger="focus"-->
-                    <!--                                    data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."-->
-                    <!--                            >Beluister </button>-->
+
+                    <a class="btn btn-primary"
+                       href="https://www.youtube.com/playlist?list=PLYO_VANm6GDSwAZ8yU9h8aXJWv5vYwNOl"
+                       target="_blank"
+                    >
+                        <span class=languages-beluister>Beluister</span>
+                    </a>
+
+
                 </div>
             </div>
 
@@ -1130,29 +951,26 @@
                     <img src="partituren/voorbladen/Herderswijze.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
                          alt="Herderswijze" height="340px" width="240px">
-                    <h4 class="text-center text-light mt-2"> Herderswijze </h4>
-                    <p class="p-text text-center text-light mt-1"> voor Engelse Hoorn
-                        en strijkorkest, solopartij ook beschikbaar in A, Bes en ES,
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank">LUYTT</a>
+                    <h4 class="text-center text-light mt-2"><span class="languages-herderswijze">Herderswijze</span></h4>
+                    <p class="p-text-small p-text text-center text-light mt-1">
+                        <span class="languages-herderswijze-p-1">voor Engelse Hoorn en strijkorkest, solopartij ook beschikbaar in A, Bes en ES,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div>
                     <div>
-                        <!-- <button type="button" class="btn btn-primary mt-2">
-                                        <a class="text-light text-light-no-decoration"									href="img/partituren/kamermuziek/LME_2018-04-30_LDV-Herderswijze-orkest.pdf"
-                                            target="_blank" download><span class="languages-download">Download</span></a>                            </button> -->
-                        <a class="btn btn-primary text-light text-light-no-decoration" href="partituren/kamermuziek/LME_2018-04-30_LDV-Herderswijze-orkest.pdf"
-
-                           target="_blank"> <span class="languages-download">Download</span> </a>
-
-                        <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                           class="btn btn-primary"
-                           title="Geen opname beschikbaar"
-                           data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                            Beluister
+                        <a class="btn btn-primary text-light-no-decoration"
+                           href="partituren/kamermuziek/LME_2018-04-30_LDV-Herderswijze-orkest.pdf"
+                           target="_blank">
+                            <span class="languages-download">Download</span>
                         </a>
 
-
+                        <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
+                           class="cannot-listen btn btn-primary"
+                           title="Geen opname beschikbaar"
+                           data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
+                            <span class="languages-beluister">Beluister</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1162,22 +980,30 @@
                     <img src="partituren/voorbladen/serenade.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
                          alt="Serenade" height="340px" width="240px">
-                    <h4 class="text-center text-light mt-2"> Serenade</h4>
-                    <p class="p-text text-center text-light mt-1"> voor cello en strijkorkest, pianoreductie of orkestversie
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank">LUYTT</a>
+                    <h4 class="text-center text-light mt-2"><span class="languages-serenade">Serenade</span></h4>
+                    <p class="p-text-small p-text text-center text-light mt-1">
+                        <span class="languages-serenade-p-1">voor cello en strijkorkest, pianoreductie of orkestversie</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div>
                     <div>
-                        <!-- <button type="button" class="btn btn-primary mt-2">
-                                        <a class="text-light text-light-no-decoration"									href="img/partituren/kamermuziek/LME_2018-04-30_LDV-Herderswijze-orkest.pdf"
-                                            target="_blank" download><span class="languages-download">Download</span></a>                            </button> -->
-                        <a class="btn btn-primary text-light text-light-no-decoration" href="partituren/kamermuziek/serenade_pianoreductie.pdf"
-
-                           target="_blank"> <span class="languages-download">Download</span> </a> <button type="button" class="btn btn-primary"
-
-                                                                  data-toggle="popover" title="Geen opname beschikbaar" data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister </button> </div>
+                        <a class="btn btn-primary text-light-no-decoration"
+                           href="partituren/kamermuziek/serenade_pianoreductie.pdf"
+                           target="_blank">
+                            <span class="languages-download">Download</span>
+                        </a>
+                        <a  tabindex="0"
+                            type="button"
+                            class="cannot-listen btn btn-primary"
+                            data-toggle="popover"
+                            title="Geen opname beschikbaar"
+                            data-trigger="focus"
+                            data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."
+                        >
+                            <span class="languages-beluister">Beluister</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -1186,25 +1012,26 @@
                     <img src="partituren/voorbladen/landelijk_trio.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
                          alt="Landelijk trio" height="340px" width="240px">
-                    <h4 class="text-center text-light mt-2"> Landelijk trio </h4>
-                    <p class="p-text text-center text-light mt-1"> voor hobo, klarinet en fagot,
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank">LUYTT</a>
+                    <h4 class="text-center text-light mt-2"><span class="languages-landelijk-trio">Landelijk trio</span></h4>
+                    <p class="p-text-small p-text text-center text-light mt-1">
+                        <span class="languages-landelijk-trio-p-1">voor hobo, klarinet en fagot,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div>
                     <div>
-                        <!-- <button type="button" class="btn btn-primary mt-2">
-                                        <a class="text-light text-light-no-decoration"									href="img/partituren/kamermuziek/LME_2018-04-30_LDV-Herderswijze-orkest.pdf"
-                                            target="_blank" download><span class="languages-download">Download</span></a>                            </button> -->
-                        <a class="btn btn-primary text-light text-light-no-decoration" href="partituren/kamermuziek/2018-10-02%20-%20LME%20Landelijk%20trio%207,5%20-%20score.pdf"
+                        <a class="btn btn-primary text-light-no-decoration"
+                           href="partituren/kamermuziek/2018-10-02%20-%20LME%20Landelijk%20trio%207,5%20-%20score.pdf"
 
                            target="_blank"> <span class="languages-download">Download</span> </a>
 
                         <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                           class="btn btn-primary"
+                           class="cannot-listen
+                            btn btn-primary"
                            title="Geen opname beschikbaar"
                            data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                            Beluister
+                            <span class="languages-beluister">Beluister</span>
                         </a>
 
                     </div>
@@ -1217,25 +1044,26 @@
                     <img src="partituren/voorbladen/landelijk_concerto_piano.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
                          alt="Landelijk Concerto" height="340px" width="240px">
-                    <h4 class="text-center text-light mt-2"> Landelijk Concerto  </h4>
-                    <p class="p-text text-center text-light mt-1"> voor altblokfluit en strijkorkest,
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank">LUYTT</a>
+                    <h4 class="text-center text-light mt-2"><span class="languages-landelijk-concerto">Landelijk Concerto</span></h4>
+                    <p class="p-text-small p-text text-center text-light mt-1">
+                        <span class="languages-landelijk-concerto-p-1">voor altblokfluit en strijkorkest,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div>
                     <div>
-                        <!-- <button type="button" class="btn btn-primary mt-2">
-                                        <a class="text-light text-light-no-decoration"									href="img/partituren/kamermuziek/LME_2018-04-30_LDV-Herderswijze-orkest.pdf"
-                                            target="_blank" download><span class="languages-download">Download</span></a>                            </button> -->
-                        <a class="btn btn-primary text-light text-light-no-decoration" href="partituren/kamermuziek/LDV_LANDELIJK_CONCERTO_PIANO.pdf"
-
-                           target="_blank"> <span class="languages-download">Download</span> </a>
+                        <a class="btn btn-primary text-light-no-decoration"
+                           href="partituren/kamermuziek/LDV_LANDELIJK_CONCERTO_PIANO.pdf"
+                           target="_blank">
+                            <span class="languages-download">Download</span>
+                        </a>
 
                         <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                           class="btn btn-primary"
+                           class="cannot-listen btn btn-primary"
                            title="Geen opname beschikbaar"
                            data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                            Beluister
+                            <span class="languages-beluister">Beluister</span>
                         </a>
 
                     </div>
@@ -1253,7 +1081,7 @@
 
     <div class="container">
 
-        <h2 class="text-center mt-0">Orkestmuziek</h2>
+        <h2 class="text-center mt-0"> <span class="languages-orkestmuziek">Orkestmuziek</span></h2>
         <hr class="divider my-4">
         <div class="row">
 
@@ -1262,22 +1090,28 @@
                     <img src="partituren/voorbladen/serenade.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
                          alt="Serenade" height="340px" width="240px">
-                    <h4 class="text-center text-dark mt-2"> Serenade</h4>
-                    <p class="p-text text-center text-dark mt-1"> voor cello en strijkorkest, pianoreductie of orkestversie
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank">LUYTT</a>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-serenade">Serenade</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-serenade-p-1">voor cello en strijkorkest, pianoreductie of orkestversie</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div>
                     <div>
-                        <!-- <button type="button" class="btn btn-primary mt-2">
-                                        <a class="text-light text-light-no-decoration"									href="img/partituren/kamermuziek/LME_2018-04-30_LDV-Herderswijze-orkest.pdf"
-                                            target="_blank" download><span class="languages-download">Download</span></a>                            </button> -->
-                        <a class="btn btn-primary" href="partituren/kamermuziek/serenade_pianoreductie.pdf"
+                        <a class="btn btn-primary"
+                           href="partituren/kamermuziek/serenade_pianoreductie.pdf"
+                           target="_blank">
+                            <span class="languages-download">Download</span>
+                        </a>
 
-                           target="_blank"> <span class="languages-download">Download</span> </a> <button type="button" class="btn btn-primary"
+                        <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
+                           class="cannot-listen btn btn-primary"
+                           title="Geen opname beschikbaar"
+                           data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
+                            <span class="languages-beluister">Beluister</span>
+                        </a>
 
-                                                                  data-toggle="popover" title="Geen opname beschikbaar" data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister </button> </div>
+                    </div>
                 </div>
             </div>
 
@@ -1286,10 +1120,14 @@
                     <img class="text-center" src="partituren/voorbladen/Vioolconcerto.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
                          alt="Vioolconcerto" height="340px" width="240px">
-                    <h4 class="text-center text-dark mt-2"> Vioolconcerto </h4>
-                    <p class="p-text text-center text-dark mt-1">pianoreductie
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank">LUYTT</a>,
-                        directiepartituur en partijen bij Höflich</p>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-vioolconcerto">Vioolconcerto</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-vioolconcerto-p-1">pianoreductie</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
+                        <span class="languages-vioolconcerto-p-2">,directiepartituur en partijen via</span>
+                        <a href="http://www.musikmph.de" target="_blank">Musikproduktion Höflich München</a>
+                    </p>
                 </div>
                 <div>
                     <a
@@ -1299,11 +1137,17 @@
                         <span class="languages-download">Download</span>
                     </a>
 
-                    <button type="button" class="btn btn-primary"> <a class="text-light text-light-no-decoration"
+                    <a class="btn btn-primary"
+                       href="https://www.muziekweb.nl/Link/BBX1041/Works-for-violin-and-orchestra"
+                       target="_blank"
+                    >
+    <span class=languages-beluister>
+        Beluister
+    </span>
+                    </a>
 
-                                                                      href="https://www.muziekweb.nl/Link/BBX1041/Works-for-violin-and-orchestra"
 
-                                                                      target="_blank">Beluister</a> </button> </div>
+                </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
@@ -1311,27 +1155,24 @@
                     <img class="text-center"
                          src="partituren/voorbladen/meizangen.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-
-                                               alt="Meizangen" height="340px" width="240px">
-                    <h4 class="text-center text-dark mt-2"> Meizangen </h4>
-                    <p class="p-text text-center text-dark mt-1">symfonisch gedicht,
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de/"
-
-                                           target="_blank">Musikproduktion Höflich München</a> </p>
+                         alt="Meizangen" height="340px" width="240px">
+                    <h4 class="text-center text-dark mt-2"><span class="languages-meizangen">Meizangen</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-meizangen-p-1">symfonisch gedicht,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de/" target="_blank">Musikproduktion Höflich München</a>
+                    </p>
                 </div>
                 <div> <a class="btn btn-primary" href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de/"
-
                          target="_blank"> <span class="languages-download">Download</span> </a>
 
                     <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-primary"
+                       class="cannot-listen btn btn-primary"
                        title="Geen opname beschikbaar"
                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
+                        <span class="languages-beluister">Beluister</span>
                     </a>
-                    <!-- <button type="button" class="btn btn-primary mt-2">
-                                      <a class="text-light text-light-no-decoration"									href="https://www.muziekweb.nl/Link/BBX1041/Works-for-violin-and-orchestra"
-                                          target="_blank">Beluister</a>							</button> --> </div>
+                </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
@@ -1339,13 +1180,15 @@
                     <img class="text-center"
                          src="partituren/voorbladen/te_deum.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-
-                                               alt="Te deum" height="340px" width="240px">
-                    <h4 class="text-center text-dark mt-2"> Te Deum </h4>
-                    <p
-                            class="p-text text-center text-dark mt-1">
-                        directiepartituur <span class="languages-beschikbaar-bij">beschikbaar bij</span>
-                        <a href="http://www.luytt.com" target="_blank">LUYTT</a>
+                         alt="Te deum"
+                         height="340px"
+                         width="240px"
+                    >
+                    <h4 class="text-center text-dark mt-2"><span class="languages-te-deum">Te Deum</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-te-deum-p-1">directiepartituur</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div>
@@ -1357,10 +1200,10 @@
                         <span class="languages-download">Download</span>
                     </a>
                     <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-primary"
+                       class="cannot-listen btn btn-primary"
                        title="Geen opname beschikbaar"
                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
+                        <span class="languages-beluister">Beluister</span>
                     </a>
 
                 </div>
@@ -1371,11 +1214,11 @@
                     <img class="text-center"
                          src="partituren/voorbladen/korensymfonie.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-
-                                               alt="Korensymfonie" height="340px" width="240px">
-                    <h4 class="text-center text-dark mt-2"> Korensymfonie </h4>
-                    <p class="p-text text-center text-dark mt-1">directiepartituur
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank">LUYTT</a>
+                         alt="Korensymfonie" height="340px" width="240px">
+                    <h4 class="text-center text-dark mt-2"><span class="languages-korensymfonie">Korensymfonie</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-korensymfonie-p-1">directiepartituur</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div> <a class="btn btn-primary" href="partituren/orkestmuziek/LDV_KORENSYMFONIE.pdf"
@@ -1383,16 +1226,13 @@
                          target="_blank"> <span class="languages-download">Download</span> </a>
 
                     <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-primary"
+                       class="cannot-listen
+                        btn btn-primary"
                        title="Geen opname beschikbaar"
                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
+                        <span class="languages-beluister">Beluister</span>
                     </a>
-
-
-                    <!-- <button type="button" class="btn btn-primary mt-2">
-                                      <a class="text-light text-light-no-decoration"									href="https://www.muziekweb.nl/Link/BBX1041/Works-for-violin-and-orchestra"
-                                          target="_blank">Beluister</a>							</button> --> </div>
+                </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
@@ -1402,20 +1242,27 @@
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
 
                                                alt="Naar hoger licht" height="340px" width="240px">
-                    <h4 class="text-center text-dark mt-2">Naar hoger licht</h4>
-                    <p class="p-text text-center text-dark mt-1"> voor cello en
-                        orkest, <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-2/">Musikproduktion Höflich
-                            München</a> </p>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-naar-hoger-licht">Naar hoger licht</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-naar-hoger-licht-p-1">voor cello en orkest, </span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-2/">Musikproduktion Höflich München</a> </p>
                 </div>
                 <div> <a class="btn btn-primary" href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-2/"
 
                          target="_blank"> <span class="languages-download">Download</span> </a>
 
-                    <button type="button" class="btn btn-primary">
-                        <a class="text-light text-light-no-decoration"
-                           href="https://www.youtube.com/playlist?list=PLYO_VANm6GDTh4JEX3fTZNbAsN1j-ynja"
-                           target="_blank">Beluister</a>
-                    </button>
+
+                    <a class="btn btn-primary"
+                       href="https://www.youtube.com/playlist?list=PLYO_VANm6GDTh4JEX3fTZNbAsN1j-ynja"
+                       target="_blank"
+                    >
+    <span class=languages-beluister>
+        Beluister
+    </span>
+                    </a>
+
+
                 </div>
             </div>
 
@@ -1426,11 +1273,12 @@
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
 
                                                alt="In ballingschap" height="340px" width="240px">
-                    <h4 class="text-center text-dark mt-2"> In ballingschap  </h4>
-                    <p class="p-text text-center text-dark mt-1">symfonisch gedicht,
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-6/"
-
-                                           target="_blank">Musikproduktion Höflich München</a> </p>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-in-ballingschap">In ballingschap</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-in-ballingschap-p-1">symfonisch gedicht,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-6/" target="_blank">Musikproduktion Höflich München</a>
+                    </p>
                 </div>
                 <div>
                     <a
@@ -1439,24 +1287,16 @@
                             target="_blank">
                         <span class="languages-download">Download</span>
                     </a>
-                    <!--              <button -->
-                    <!--                      type="button" -->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover" -->
-                    <!--                      title="Geen opname beschikbaar" -->
-                    <!--                      data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."-->
-                    <!--              >-->
-                    <!--              Beluister </button>-->
-                    <button
-                            type="button"
-                            class="btn btn-primary">
-                        <a
-                                class="text-light text-light-no-decoration"
-                                href="https://www.youtube.com/playlist?list=PLYO_VANm6GDTh4JEX3fTZNbAsN1j-ynja"
-                                target="_blank">
+
+                    <a class="btn btn-primary"
+                       href="https://www.youtube.com/playlist?list=PLYO_VANm6GDTh4JEX3fTZNbAsN1j-ynja"
+                       target="_blank"
+                    >
+                        <span class=languages-beluister>
                             Beluister
-                        </a>
-                    </button>
+                        </span>
+                    </a>
+
                 </div>
             </div>
 
@@ -1467,37 +1307,28 @@
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
 
                                                alt="Celloc Concerto in D" height="340px" width="240px">
-                    <h4 class="text-center text-dark mt-2"> Cello Concerto in D </h4>
-                    <p class="p-text text-center text-dark mt-1">
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodwijk-de/"
-
-                                           target="_blank">Musikproduktion Höflich München</a> </p>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-cello-concerto-in-d">Cello Concerto in D</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-cello-concerto-in-d-p-1">orkestversie, cellopartij, klavierreductie,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodwijk-de/" target="_blank">Musikproduktion Höflich München</a>
+                    </p>
                 </div>
                 <div>
-                    <a
-                            class="btn btn-primary"
-                            href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodwijk-de/"
-                            target="_blank">
+                    <a class="btn btn-primary"
+                       href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodwijk-de/"
+                       target="_blank">
                         <span class="languages-download">Download</span>
                     </a>
-                    <!--              <button -->
-                    <!--                      type="button" -->
-                    <!--                      class="btn btn-primary"-->
-                    <!--                      data-toggle="popover" -->
-                    <!--                      title="Geen opname beschikbaar" -->
-                    <!--                      data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."-->
-                    <!--              >-->
-                    <!--              Beluister </button>-->
-                    <button
-                            type="button"
-                            class="btn btn-primary">
-                        <a
-                                class="text-light text-light-no-decoration"
-                                href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQByGj4d3eduv2I-VKIFfR_"
-                                target="_blank">
-                            Beluister
-                        </a>
-                    </button>
+                    <a class="btn btn-primary"
+                       href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQByGj4d3eduv2I-VKIFfR_"
+                       target="_blank"
+                    >
+                    <span class=languages-beluister>
+                        Beluister
+                    </span>
+                    </a>
+
                 </div>
             </div>
 
@@ -1510,10 +1341,11 @@
                          height="340px"
                          width="240px"
                     >
-                    <h4 class="text-center text-dark mt-2"> Landelijk concerto </h4>
-                    <p class="p-text text-center text-dark mt-1">
-                        voor altblokfluit en strijkorkest, <span class="languages-beschikbaar-bij">beschikbaar bij</span>
-                        <a href="http://www.luytt.com" target="_blank">LUYTT</a>
+                    <h4 class="text-center text-dark mt-2"><span class="languages-landelijk-concerto">Landelijk concerto</span></h4>
+                    <p class="p-text-small p-text text-center text-dark mt-1">
+                        <span class="languages-landelijk-concerto-p-1">voor altblokfluit en strijkorkest,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div>
@@ -1523,25 +1355,16 @@
                             target="_blank">
                         <span class="languages-download">Download</span>
                     </a>
-                    <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-toggle="popover"
-                            title="Geen opname beschikbaar"
-                            data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."
+                    <a  tabindex="0"
+                        type="button"
+                        class="cannot-listen btn btn-primary"
+                        data-toggle="popover"
+                        title="Geen opname beschikbaar"
+                        data-trigger="focus"
+                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar."
                     >
-                        Beluister
-                    </button>
-                    <!--              <button-->
-                    <!--                      type="button"-->
-                    <!--                      class="btn btn-primary">-->
-                    <!--                <a-->
-                    <!--                        class="text-light text-light-no-decoration"-->
-                    <!--                        href="https://www.youtube.com/playlist?list=PLYO_VANm6GDTh4JEX3fTZNbAsN1j-ynja"-->
-                    <!--                        target="_blank">-->
-                    <!--                  Beluister-->
-                    <!--                </a>-->
-                    <!--              </button>-->
+                        <span class="languages-beluister">Beluister</span>
+                    </a>
                 </div>
             </div>
 
@@ -1557,30 +1380,31 @@
         <h2 class="text-center text-light mt-0"><span class="languages-solomuziek">Solomuziek</span></h2>
         <hr class="divider-secondary my-4">
         <div class="row">
+
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
                 <div class="flex-grow-1">
                     <img src="partituren/voorbladen/Vioolconcerto.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-
-                                               alt="Vioolconcerto" height="340px" width="240px">
-                    <h4 class="text-center text-light mt-2"> Vioolconcerto </h4>
-                    <p class="p-text text-center text-light mt-1">pianoreductie
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank">LUYTT</a>,
-                        directiepartituur en partijen bij <a href="https://repertoire-explorer.musikmph.de/en/" target="_blank">Musikproduktion Höflich
-                            München</a></p>
+                         alt="Vioolconcerto" height="340px" width="240px">
+                    <h4 class="text-center text-light mt-2"><span class="languages-vioolconcerto">Vioolconcerto</span></h4>
+                    <p class="p-text-small p-text text-center text-light mt-1">
+                        <span class="languages-vioolconcerto-p-1">pianoreductie</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
+                        <span class="languages-vioolconcerto-p-2">,directiepartituur en partijen bij</span>
+                        <a href="https://repertoire-explorer.musikmph.de/en/" target="_blank">Musikproduktion Höflich München</a>
+                    </p>
                 </div>
-                <div> <a class="btn btn-light text-blue" href="partituren/orkestmuziek/LME2017-04-020_LDV_vioolconcerto.pdf"
+                <div>
+                    <a class="btn btn-light text-blue"
+                       href="partituren/orkestmuziek/LME2017-04-020_LDV_vioolconcerto.pdf"
+                       target="_blank">
+                        <span class="languages-download">Download</span>
+                    </a>
 
-                         target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!-- <button type="button" class="btn btn-primary mt-2" data-toggle="popover" title="Geen opname beschikbaar"
-                                          data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">									Beluister
-                                      </button> -->
-
-                    <a
-                            class="btn btn-light text-blue"
-                            href="https://www.muziekweb.nl/Link/BBX1041/Works-for-violin-and-orchestra"
-                            target="_blank">
-                        Beluister
+                    <a class="btn btn-light text-blue"
+                       href="https://www.muziekweb.nl/Link/BBX1041/Works-for-violin-and-orchestra"
+                       target="_blank">
+                        <span class="languages-beluister">Beluister</span>
                     </a>
                 </div>
             </div>
@@ -1589,22 +1413,23 @@
                 <div class="flex-grow-1">
                     <img src="partituren/voorbladen/larghetto.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-
-                                               alt="Larghetto" height="340px" width="240px">
-                    <h4 class="text-light mt-2"> Larghetto voor Orgel </h4>
-                    <p class="p-text text-center text-light mt-1">uitgegeven bij <a href="http://www.luytt.com"
-
-                                                                                    target="_blank">LUYTT</a> </p>
+                         alt="Larghetto" height="340px" width="240px">
+                    <h4 class="text-light mt-2"><span class="languages-larghetto-voor-orgel">Larghetto voor Orgel</span></h4>
+                    <p class="p-text-small p-text text-center text-light mt-1">
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
+                    </p>
                 </div>
                 <div> <a class="btn btn-light text-blue" href="partituren/solomuziek/LME2018-02-041_LDV_larghetto.pdf"
 
-                         target="_blank"> <span class="languages-download">Download</span> </a> <a class="btn btn-light text-blue"
-
-                                                           href="https://www.youtube.com/watch?v=wAz5wAjoupQ" target="_blank">
-                    Beluister </a>
-                    <!-- <button type="button" class="btn btn-light btn-light-white-background mt-2"
-                                  data-toggle="popover" title="Geen opname beschikbaar"							data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                                  Beluister						</button> --> </div>
+                         target="_blank"> <span class="languages-download">Download</span> </a>
+                    <a class="btn btn-light text-blue"
+                       href="https://www.youtube.com/watch?v=wAz5wAjoupQ"
+                       target="_blank"
+                    >
+                        <span class="languages-beluister">Beluister</span>
+                    </a>
+                </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
@@ -1612,36 +1437,27 @@
                     <img class="text-center"
                          src="partituren/voorbladen/pastorale_in_d.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-
-                                               alt="Pastorales in D" height="340px" width="240px">
-                    <h4 class="text-center text-light mt-2"> Pastorales voor piano </h4>
-                    <p class="p-text text-center text-light mt-1"> <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com"
-
-                                                                                      target="_blank">LUYTT</a> </p>
+                         alt="Pastorales in D" height="340px" width="240px">
+                    <h4 class="text-center text-light mt-2"><span class="languages-pastorales-voor-piano">Pastorales voor piano</span></h4>
+                    <p class="p-text-small p-text text-center text-light mt-1">
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a> </p>
                 </div>
-                <div> <a class="btn btn-light text-blue" href="partituren/solomuziek/LME2018-03-038_LDV_pastorales.pdf"
-
-                         target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!-- <a
-                              class="btn btn-light text-blue"                        href="https://www.youtube.com/watch?v=wAz5wAjoupQ"
-                              target="_blank">                        Beluister
-                          </a> -->
-                    <!--              -->
-                    <!--              <button type="button" class="btn btn-light text-blue"-->
-
-                    <!--                data-toggle="popover" title="Geen opname beschikbaar" data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">-->
-                    <!--                Beluister </button>-->
-
+                <div>
+                    <a class="btn btn-light text-blue"
+                       href="partituren/solomuziek/LME2018-03-038_LDV_pastorales.pdf"
+                       target="_blank">
+                        <span class="languages-download">Download</span>
+                    </a>
 
                     <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-light text-blue"
+                       class="cannot-listen
+                        btn btn-light text-blue"
                        title="Geen opname beschikbaar"
                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
+                        <span class="languages-beluister">Beluister</span>
                     </a>
-                    <!-- <button type="button" class="btn btn-light mt-2">
-                                  <a class="text text-light-no-decoration"								href="https://www.muziekweb.nl/Link/BBX1041/Works-for-violin-and-orchestra"
-                                      target="_blank">Beluister</a>						</button> --> </div>
+                </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
@@ -1649,47 +1465,48 @@
                     <img class="text-center"
                          src="partituren/voorbladen/prelude_en_fuga_voor_orgel.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-
-                                               alt="Prelude en Fuga voor Orgel" height="340px" width="240px">
-                    <h4 class="text-center text-light mt-2"> Prelude en Fuga </h4>
-                    <p class="p-text text-center text-light mt-1"> voor orgel,
-                        uitgegeven bij <a href="http://www.luytt.com" target="_blank">
-                            LUYTT</a> </p>
+                         alt="Prelude en Fuga voor Orgel" height="340px" width="240px"
+                    >
+                    <h4 class="text-center text-light mt-2"><span class="languages-prelude-en-fuga-voor-orgel">Prelude en Fuga voor orgel</span></h4>
+                    <p class="p-text-small p-text text-center text-light mt-1">
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a> </p>
                 </div>
-                <div> <a class="btn btn-light text-blue" href="partituren/solomuziek/LME2018-05-039_LDV_Prelude_en_fuga_orgel.pdf"
-
-                         target="_blank"> <span class="languages-download">Download</span> </a> <a class="btn btn-light text-blue"
-
-                                                           href="https://www.youtube.com/watch?v=wAz5wAjoupQ" target="_blank">
-                    Beluister </a> </div>
+                <div>
+                    <a class="btn btn-light text-blue"
+                       href="partituren/solomuziek/LME2018-05-039_LDV_Prelude_en_fuga_orgel.pdf"
+                       target="_blank">
+                        <span class="languages-download">Download</span>
+                    </a>
+                    <a class="btn btn-light text-blue"
+                    href="https://www.youtube.com/watch?v=wAz5wAjoupQ" target="_blank">
+                    <span class="languages-beluister">Beluister</span>
+                    </a>
+                </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
                 <div class="flex-grow-1">
                     <img src="partituren/voorbladen/sonate_in_A.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
-
-                                               alt="Sonate in A" height="340px" width="240px">
-                    <h4 class="text-center text-light mt-2"> Sonate in A voor piano </h4>
-                    <p class="p-text text-center text-light mt-1"> <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
-
-                            href="http://www.luytt.com" target="_blank"> LUYTT </a> </p>
+                         alt="Sonate in A" height="340px" width="240px">
+                    <h4 class="text-center text-light mt-2"><span class="languages-sonate-in-a-voor-piano">Sonate in A voor piano</span> </h4>
+                    <p class="p-text-small p-text text-center text-light mt-1"> <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span> </a>
+                    </p>
                 </div>
                 <div> <a class="btn btn-light text-blue" href="partituren/solomuziek/LDV_SONATE_PIANO.pdf"
 
                          target="_blank"> <span class="languages-download">Download</span> </a>
 
                     <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-light text-blue"
+                       class="cannot-listen
+                        btn btn-light text-blue"
                        title="Geen opname beschikbaar"
                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
+                        <span class="languages-beluister">Beluister</span>
                     </a>
-
-
-                    <!-- <button type="button" class="btn btn-light mt-2">
-                                      <a class="text text-light-no-decoration"									href="https://www.muziekweb.nl/Link/BBX1041/Works-for-violin-and-orchestra"
-                                          target="_blank">Beluister</a>							</button> --> </div>
+                </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
@@ -1699,24 +1516,23 @@
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
 
                                                alt="Celloconcerto" height="340px" width="240px">
-                    <h4 class="text-light mt-2"> Cello Concerto in D </h4>
-                    <p class="p-text text-light mt-1"> <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodwijk-de/" target="_blank">Musikproduktion Höflich
+                    <h4 class="text-light mt-2"><span class="languages-cello-concerto-in-d">Cello Concerto in D </span></h4>
+                    <p class="p-text-small p-text text-light mt-1">
+                        <span class="languages-cello-concerto-in-d-p-1">orkestversie, cellopartij, klavierreductie,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodwijk-de/" target="_blank">Musikproduktion Höflich
                         München</a> </p>
                 </div>
                 <div>
-                    <!--              <button type="button" class="btn btn-light text-blue" data-toggle="popover"-->
-
-                    <!--                title="Momenteel nog geen partituur beschikbaar" data-content="Er is nog niet van elk werk een partituur beschikbaar">-->
-                    <!--                <span class="languages-download">Download</span> </button>-->
-
-                    <a class="btn btn-light text-blue" href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodwijk-de/"
-
-                       target="_blank"> <span class="languages-download">Download</span> </a>
+                    <a class="btn btn-light text-blue"
+                       href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodwijk-de/"
+                       target="_blank">
+                        <span class="languages-download">Download</span>
+                    </a>
 
                     <a
                             class="btn btn-light text-blue"
                             href="https://www.youtube.com/playlist?list=PLYO_VANm6GDQByGj4d3eduv2I-VKIFfR_"
-                            target="_blank"> Beluister
+                            target="_blank"> <span class="languages-beluister">Beluister</span>
                     </a>
                 </div>
             </div>
@@ -1727,22 +1543,27 @@
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
 
                                                alt="Naar hoger licht" height="340px" width="240px">
-                    <h4 class="text-light mt-2"> Naar hoger licht </h4>
-                    <p class="p-text text-light mt-1"> voor cello en orkest,
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-2/" target="_blank"> Musikproduktion Höflich
-                            München</a> </p>
+                    <h4 class="text-light mt-2"><span class="languages-naar-hoger-licht">Naar hoger licht</span></h4>
+                    <p class="p-text-small p-text text-light mt-1">
+                        <span class="languages-naar-hoger-licht-p-1">voor cello en orkest,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-2/" target="_blank">Musikproduktion Höflich München</a> </p>
                 </div>
-                <div> <a class="btn btn-light text-blue" href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-2/"
+                <div>
+                    <a class="btn btn-light text-blue" href="https://repertoire-explorer.musikmph.de/en/product/vocht-lodewijk-de-2/"
 
-                         target="_blank"> <span class="languages-download">Download</span> </a>
-                    <!--              <button type="button" class="btn btn-light text-blue"-->
-                    <!--                data-toggle="popover" title="Geen opname beschikbaar" data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">-->
-                    <!--                Beluister </button>-->
-                    <button type="button" class="btn btn-light">
-                        <a class="text text-light-no-decoration"
-                           href="https://www.youtube.com/playlist?list=PLYO_VANm6GDTh4JEX3fTZNbAsN1j-ynja"
-                           target="_blank">Beluister</a>
-                    </button>
+                         target="_blank"> <span class="languages-download">Download</span>
+                    </a>
+
+
+                    <a class="btn btn-light text-blue"
+                       href="https://www.muziekweb.nl/Link/BBX1041/Works-for-violin-and-orchestra"
+                       target="_blank"
+                    >
+    <span class=languages-beluister>
+        Beluister
+    </span>
+                    </a>
+
                 </div>
             </div>
 
@@ -1752,24 +1573,22 @@
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
 
                                                alt="Idylle" height="340px" width="240px">
-                    <h4 class="text-light mt-2"> Idylle  </h4>
-                    <p class="p-text text-light mt-1"> voor piano,
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a
-
-                                href="http://www.luytt.com" target="_blank"> LUYTT </a> </p>
+                    <h4 class="text-light mt-2"><span class="languages-idylle-voor-piano">Idylle voor piano</span></h4>
+                    <p class="p-text-small p-text text-light mt-1">
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span>
+                        <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span> </a>
+                    </p>
                 </div>
                 <div> <a class="btn btn-light text-blue" href="partituren/solomuziek/LME201903047_Idylle_compleet.pdf"
 
                          target="_blank"> <span class="languages-download">Download</span> </a>
                     <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                       class="btn btn-light text-blue"
+                       class="cannot-listen btn btn-light text-blue"
                        title="Geen opname beschikbaar"
                        data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                        Beluister
+                        <span class="languages-beluister">Beluister</span>
                     </a>
-                    <!-- <button type="button" class="btn btn-light mt-2">
-                                      <a class="text text-light-no-decoration"									href="https://www.youtube.com/watch?v=wAz5wAjoupQ "
-                                          target="_blank">Beluister</a>							</button> --> </div>
+                </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex flex-column text-center mb-3">
@@ -1777,25 +1596,24 @@
                     <img src="partituren/voorbladen/landelijk_concerto_piano.png"
                          onerror="this.src='partituren/voorbladen/A_GEEN_VOORBLAD.png'"
                          alt="Landelijk Concerto piano" height="340px" width="240px">
-                    <h4 class="text-center text-light mt-2"> Landelijk Concerto  </h4>
-                    <p class="p-text text-center text-light mt-1"> voor altblokfluit en strijkorkest,
-                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank">LUYTT</a>
+                    <h4 class="text-center text-light mt-2"><span class="languages-landelijk-concerto">Landelijk Concerto</span></h4>
+                    <p class="p-text-small p-text text-center text-light mt-1">
+                        <span class="languages-landelijk-concerto-p-1">voor altblokfluit en strijkorkest,</span>
+                        <span class="languages-beschikbaar-bij">beschikbaar bij</span> <a href="http://www.luytt.com" target="_blank"><span class="languages-luytt">LUYTT Music Editions</span></a>
                     </p>
                 </div>
                 <div>
                     <div>
-                        <!-- <button type="button" class="btn btn-primary mt-2">
-                                        <a class="text-light text-light-no-decoration"									href="img/partituren/kamermuziek/LME_2018-04-30_LDV-Herderswijze-orkest.pdf"
-                                            target="_blank" download><span class="languages-download">Download</span></a>                            </button> -->
-                        <a class="btn btn-light text-blue" href="partituren/solomuziek/LDV_LANDELIJK_CONCERTO_PIANO.pdf"
-
-                           target="_blank"> <span class="languages-download">Download</span> </a>
+                        <a class="btn btn-light text-blue" href="partituren/solomuziek/LDV_LANDELIJK_CONCERTO_PIANO.pdf" target="_blank">
+                            <span class="languages-download">Download</span>
+                        </a>
 
                         <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-                           class="btn btn-light text-blue"
+                           class="cannot-listen
+                            btn btn-light text-blue"
                            title="Geen opname beschikbaar"
                            data-content="Wegens auteursrechten van de uitvoerders is niet van elk werk een online geluidsfragment beschikbaar.">
-                            Beluister
+                            <span class="languages-beluister">Beluister</span>
                         </a>
 
                     </div>
@@ -1863,11 +1681,7 @@
                 <hr class="divider dark my-4">
                 <p class="text-dark-50 mb-4">
                     <span class="languages-het-fonds-p1">
-                        Het Lodewijk De Vocht Fonds zorgt voor
-                    de verspreiding van de muziek van Lodewijk De Vocht. Het fonds
-                    zorgt voor de ontsluiting van de collectie partituren en promoot
-                    deze bij mogelijke uitvoerders. Het fonds onderhoudt nauwe banden
-                    met het Studiecentrum Vlaamse Muziek en de uitgeverijen
+                        Het Lodewijk De Vocht Fonds zorgt voor de verspreiding van de muziek van Lodewijk De Vocht. Het zet zich in voor de ontsluiting van de collectie partituren en promoot deze bij mogelijke uitvoerders. Het fonds onderhoudt nauwe banden met het Studiecentrum Vlaamse Muziek en de uitgeverijen
                     </span>
                     <a href="http://www.luytt.com"
                        target="_blank">Luytt Music Editions</a>
@@ -1911,23 +1725,23 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row text-center justify-content-center">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="mt-5"> <i class="fas fa-4x fa-user text-primary mb-4"></i>
                     <h3 class="h4 mb-2">Patrick Van Looy</h3>
-                    <p class="text-muted mb-0"><span class="languages-het-fonds-lid">Lid</span> </p>
+                    <p class="text-muted mb-0"><span class="languages-het-fonds-lid">lid</span> </p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="mt-5"> <i class="fas fa-4x fa-user text-primary mb-4"></i>
                     <h3 class="h4 mb-2">Anne Ardui</h3>
-                    <p class="text-muted mb-0"> <span class="languages-het-fonds-lid">Lid</span> </p>
+                    <p class="text-muted mb-0"> <span class="languages-het-fonds-lid">lid</span> </p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="mt-5"> <i class="fas fa-4x fa-user text-primary mb-4"></i>
                     <h3 class="h4 mb-2">Lisbeth Wolfs</h3>
-                    <p class="text-muted mb-0"><span class="languages-het-fonds-lid">Lid</span>  </p>
+                    <p class="text-muted mb-0"><span class="languages-het-fonds-lid">lid</span>  </p>
                 </div>
             </div>
         </div>
@@ -1940,25 +1754,25 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-light text-center">
-                <h2 class="mt-0">Lodewijk De Vochtfonds vzw</h2>
+                <h2 class="mt-0">Lodewijk De Vochtfonds <span class="languages-vzw">vzw</span></h2>
                 <hr class="divider my-4">
                 <p class="text-light mb-5"> Italiëlei 213 Bus 12, 2000 Antwerpen </p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 ml-auto text-light text-center"> <a href="callto://+32468240001"><i
-                    class="fas fa-phone fa-3x mb-3 text-muted"></i></a>
+                    class="fas fa-phone fa-3x mb-3 text-muted mt-1"></i></a>
                 <div><a class="text-light" href="callto://+32468240001">+32 468 24
                     00 01</a></div>
             </div>
 
 
-            <div class="col-lg-4 mr-auto text-light text-center"> <a href="https://www.youtube.com/channel/UCd5T7jAGxR_2URIfjbXf46A/" target="_blank"><i
+            <div class="col-lg-4 mr-auto text-light text-center mt-1"> <a href="https://www.youtube.com/channel/UCd5T7jAGxR_2URIfjbXf46A/" target="_blank"><i
                     class="fab fa-youtube-square fa-3x mb-3 text-muted"></i></a>
-                <div><a class="text-light" href="https://www.youtube.com/channel/UCd5T7jAGxR_2URIfjbXf46A/" target="_blank">YouTube Kanaal</a></div>
+                <div><a class="text-light" href="https://www.youtube.com/channel/UCd5T7jAGxR_2URIfjbXf46A/" target="_blank">YouTube</a></div>
             </div>
 
-            <div class="col-lg-4 mr-auto text-light text-center"> <a href="mailto:lodewijkdevochtfonds@gmail.com"><i
+            <div class="col-lg-4 mr-auto text-light text-center mt-1"> <a href="mailto:lodewijkdevochtfonds@gmail.com"><i
                     class="fas fa-mail-bulk fa-3x mb-3 text-muted"></i></a>
                 <div><a class="text-light" href="mailto:lodewijkdevochtfonds@gmail.com">lodewijkdevochtfonds@gmail.com</a></div>
             </div>
@@ -1966,7 +1780,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
                 <hr class="divider my-4">
-                <p  class="text-muted mb-5"> Ondernemingsnummer: 0412 447 463 </p>
+                <p  class="text-muted mb-5"> <span class="languages-ondernemersnummer">Ondernemingsnummer:</span> 0412 447 463 </p>
                 <p class="text-muted mb-5"> BEOBANK: IBAN: BE76 9530 3777 4795 <br>
                     ***BIC CTBK BE BX </p>
             </div>

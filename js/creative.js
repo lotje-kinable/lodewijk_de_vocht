@@ -84,4 +84,19 @@
 	// 		tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
 	// 	}
 	// });
+
+
+
+
+
 })(jQuery); // End of use strict
+
+
+$(document).ready(function() {
+	if (localStorage.getItem('language') !== null) {
+		const lng = localStorage.getItem('language');
+		$("#languages-not-mobile").val(lng);
+		$("#languages-mobile").val(lng);
+		firstLoadLanguage(lng);
+	}
+});

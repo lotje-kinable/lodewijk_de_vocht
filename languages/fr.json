@@ -1,10 +1,152 @@
 {
+  "languages-luytt" : "LUYTT Music Editions",
 
-  "languages-home": "Page d'accueil",
+  "languages-home": "Page d'acceuil",
+
   "languages-biografie" : "Biographie",
+  "languages-biography-p-1" : "Lodewijk De Vocht ( Anvers, 1887-1977) est une des personnalités qui ont marqué la vie musicale flamande et  belge de la première moitié du vingtième siècle. ",
+  "languages-biography-p-2" : "A l’âge de dix ans, il entre dans la chorale de la cathédrale d’Anvers, où il reçoit une formation musicale d’Emile Wambach et de Karel Weymans.  En 1899 il est admis dans la classe d’orchestre du Conservatoire Royal comme jeune violoniste. Après ses études, en 1921, De Vocht rejoindra le Conservatoire, comme professeur d’harmonie, en 1925 comme titulaire de la classe d’orchestre ( avec des élèves comme Daniël Sternefeld, Jef Maes et André Cluytens) et en 1944 comme directeur.",
+  "languages-biography-p-3" : "Il fut à l’initiative des Jeunesses Musicales d’ Anvers et fut directeur de la Chapelle Musicale Reine Elisabeth.",
+
+  "languages-componist" : "Le compositeur",
+  "languages-componist-p-1" : "Lodewijk De Vocht a laissé une œuvre conséquente d'inspiration néo-romantique et parfois vitalistique, qui inclut des messes, motets, chansons et hymnes, poèmes et cantates symphoniques, concertos pour violon, violoncelle et flûte à bec, musique de chambre, œuvres solos pour piano et guitare, ainsi que de la musique de théâtre.",
+  "languages-componist-p-2" : "De Vocht écrit ses premières compositions à l’âge de seize ans ( oeuvres chorales, chansons et la cantate Groeninghe). Il continuera à écrire principalement de la musique vocale, souvent de nature religieuse comme le “Jaarkrans van Geestelijke Liederen” ( Cycle annuel de Chansons Spirituelles, 1909-1935), sept messes latines, les “XIV Cantica” et “Duo Cantus Mariani”, le “Te Deum” ( 1935), de nombreuses chansons de Noël, “Psalmen voor volkszang” ( Psaumes pour la congrégation, 1959) et de multiples chansons ( sur des textes de Gezelle, Simons, Cuppens, Peleman et autres). On retrouve la même atmosphère mystique dans sa musique profane. Les compositions les plus originales de Lodewijk De Vocht sont écrites pour le chœur: des études chorales complexes, parfois sans paroles, et des symphonies chorales, telles que la “Symphonie pour chœur mixte et grand orchestre” (1932) et quatre études pour chœur mixte.  Mentionnons également d’autres oeuvres chorales avec accompagnement d’orchestre, telles que “Volkenhulde” ( Hommage aux peuples, à l’occasion de l'Exposition universelle de 1930); “Scaldis Aeterna” (1966) et le chant lyrique “Primavera” (1962 - 1965).",
+  "languages-componist-p-3" : "Dans le domaine de la musique instrumentale De Vocht composa au début de sa carrière quelques poèmes symphoniques d’une grande fraicheur, comme “Dageraad”( L’aube, 1906) et “In ballingschap” ( En exil, 1914). Plus tard il écrit ses concertos pour violon ( 1944), violoncelle ( 1955) et flûte à bec (1957). Enfin il est l’auteur de musique de chambre( p.e. Trio pastoral pour  hautbois, clarinette et basson) et d’ oeuvres solo pour piano et guitare.",
+
+  "languages-dirigent" : "Le chef d’orchestre",
+  "languages-dirigent-p-1" : "En plus de ses activités de pédagogue et de compositeur, Lodewijk De Vocht s’adonna aussi à une carrière de chef d'orchestre. Comme plus jeune violoniste dans l'orchestre de la Societé des Nouveaux Concerts ( “Maatschappij der Nieuwe Concerten”), il eut l’occasion de jouer sous la direction des plus grands chefs de l’époque parmis lesquels Gustav Mahler, Richard Strauss, Hans Richter et Felix Weingartner, entre autres. En 1912, le jeune De Vocht fut nommé Maître de chapelle de la cathédrale d'Anvers. ",
+  "languages-dirigent-p-2" : "En 1915, Amanda Schnitzler-Selb lui confia la direction de sa chorale des dames, qui fut transformé en choeur mixte devenant la Chorale Caecilia avec lequel De Vocht acquiert une renommée internationale.  ",
+  "languages-dirigent-p-3" : "En 1921, il succéda à Lodewijk Mortelmans comme maître des “Nieuwe Concerten”. Grâce à cette société, Anvers devient l’un des centres importants de la vie musicale européenne entre 1921 et 1936. Enfin, à  partir de 1935, il dirige les concerts du Conservatoire d'Anvers. Son interprétation de la Passion selon Matthieu connait un énorme succès et devient un évènement incontournable à Anvers les samedis de Pâques.",
+  "languages-dirigent-p-4" : "Avec la Chorale Caecilia et l'orchestre des “Nieuwe Concerten”, il met également au programme les oeuvres les plus modernes, entre autres de Milhaud, Honegger, Stravinsky, Ravel, Schmitt, Respighi. Il se distingue  par ses interprétations révolutionnaires des “Euménides” de Darius Milhaud et “Jeanne d'Arc au bûcher” d'Arthur Honegger, deux compositeurs avec lesquels il travaille en étroite collaboration. Avec une quarantaine de représentations de Jeanne d'Arc, à Paris et aux Hollandfestivals  de 1946 et 1947, il deviendra le plus important défenseur de cette œuvre. En 1943, à la demande Honegger lui-même, il enregistre le chef-d'œuvre  pour His Masters Voice, disque qui fut distribué dans le monde entier. En 1960, il diriga cette oeuvre lors d’une émission en direct de l'Eurovision. ",
+
+  "languages-werken": "Œuvres",
+  "languages-koormuziek" : "Musique chorale ",
+  "languages-kamermuziek" : "Musique de chambre ",
+  "languages-orkestmuziek": "Musique orchestrale ",
+  "languages-solomuziek": "Musique en solo ",
+
+  "languages-concertagenda": "",
+
+  "languages-het-fonds": "La Fondation",
+  "languages-vzw": "Fondation ASBL",
+  "languages-het-fonds-p1" : "La Fondation Lodewijk De Vocht se charge de la distribution de la musique de Lodewijk De Vocht. La Fondation rend la collection de partitions accessible et en fait la promotion auprès des interprètes potentiels. Elle entretient des liens étroits avec le Centre d'étude de la musique flamande et les éditions ",
+  "languages-het-fonds-p2" : " et ",
+  "languages-het-fonds-knop" : "Le Conseil d’Administration de la Fondation se compose des membres suivants: ",
+  "languages-het-fonds-voorzitter" : "président",
+  "languages-het-fonds-ondervoorzitter" : "vice président",
+  "languages-het-fonds-penningmeester" : "trésorier",
+  "languages-het-fonds-secretaris" : "secrétaire",
+  "languages-het-fonds-lid" : "membre",
+
+  "languages-ondernemersnummer" : "Numéro d'entreprise : ",
+
+  "languages-contact": "Contact",
+
   "languages-download": "Télécharger",
-  "languages-componist" : "Compositeur"
+  "languages-download-niet-beschikbaar": "Télécharger",
+  "languages-beluister": "Ecoutez",
+  "languages-beluister-niet-beschikbaar": "Ecoutez",
 
+  "languages-beschikbaar-bij": "disponible chez ",
 
+  "languages-jezus-en-sint-janneken" : "De Jésus et Saint-Jean",
+  "languages-jezus-en-sint-janneken-p" : "pour voix d'enfants, ou voix égales, et orgue/piano,",
+
+  "languages-landelijke-suite" : "Suite pastorale",
+  "languages-landelijke-suite-p" : "pour chœur mixte, texte de Willem Gijssels,",
+
+  "languages-in-te-speravi" : "In te speravi",
+  "languages-in-te-speravi-p-1" : "chant pour 1, 2 ou 4 voix, avec ou sans accompagnement orgue/piano,",
+
+  "languages-cantica" : "Cantiques",
+  "languages-cantica-p-1" : "pour 3 voix égales, avec ou sans orgue,",
+
+  "languages-duo-cantus-mariani": "Duo Cantus Mariani",
+  "languages-duo-cantus-mariani-p-1": "pour 3 voix égales, avec ou sans orgue,",
+
+  "languages-missa-pastorum-a-en-b" : "Missa Pastorum A+B",
+  "languages-missa-pastorum-a-en-b-p-1" : "chœur et orgue,",
+
+  "languages-missa-in-honorem-angelorem": "Missa in honorem angelorum",
+  "languages-missa-in-honorem-angelorem-p-1": "chœur à trois voix et orgue,",
+
+  "languages-missa-in-honorem-sti-josephi" : "Missa in honorem Sancti Josephi",
+  "languages-missa-in-honorem-sti-josephi-p-1" : "soprano, alto, tenor, basse et orgue,",
+
+  "languages-fabelen-boek-1" : "Fables, tome 1",
+  "languages-fabelen-boek-1-p-1" : "pour 1 ou plusieures voix avec accompagnement piano,",
+
+  "languages-fabelen-boek-2" : "Fables, tome 2",
+  "languages-fabelen-boek-2-p-1" : "pour 1 ou plusieures voix avec accompagnement piano,",
+
+  "languages-fabelen-boek-3" : "Fables, tome 3",
+  "languages-fabelen-boek-3-p-1" : "pour 1 ou plusieures voix avec accompagnement piano,",
+
+  "languages-kerstliederen" : "Collection de chants de Noël",
+  "languages-kerstliederen-p-1" : "pour différentes formations,",
+
+  "languages-1-nummber-bij": "1 numéro chez",
+
+  "languages-psalmen-voor-volkszang-pasen": "Psaumes",
+  "laguages-psalmen-voor-volkszang-pasen-p-1": " pour Päques,",
+
+  "languages-psalmen-voor-volkszang-kerst": "Psaumes",
+  "languages-psalmen-voor-volkszang-kerst-p-1": "pour l’avènement et Noël,",
+
+  "languages-psalmen-voor-volkszang-geel": "Psaumes",
+  "languages-psalmen-voor-volkszang-geel-p-1": "",
+
+  "languages-pastorale-voor-koor": "Pastorale pour chœur",
+  "languages-pastorale-voor-koor-p-1": "",
+
+  "languages-missa-brevis-2-stemmig": "Missa brevis",
+  "languages-missa-brevis-2-stemmig-p-1": "à 2 voix,",
+
+  "languages-missa-brevis-4-stemmig": "Missa brevis",
+  "languages-missa-brevis-4-stemmig-p-1": "à 4 voix,",
+
+  "languages-herderswijze": "Mélodie du berger",
+  "languages-herderswijze-p-1": "pour cor anglais et quatuor ou quintette à cordes, partie solo également disponible en A, Bes et ES,",
+
+  "languages-serenade": "Serenade",
+  "languages-serenade-p-1": "pour violoncelle et cordes: réduction pour piano et violoncelle et pour instruments à cordes et violoncelle solo,",
+
+  "languages-landelijk-trio": "Trio pastoral",
+  "languages-landelijk-trio-p-1": "pour hautbois, clarinette et basson,",
+
+  "languages-landelijk-concerto": "Concert Champêtre",
+  "languages-landelijk-concerto-p-1": "",
+
+  "languages-vioolconcerto": "Concerto pour violon",
+  "languages-vioolconcerto-p-1": "réduction pour violon et piano,",
+  "languages-vioolconcerto-p-2": ", partitions de direction et parties",
+
+  "languages-meizangen": "Chants de mai",
+  "languages-meizangen-p-1": "poème symphonique,",
+
+  "languages-te-deum": "Te Deum",
+  "languages-te-deum-p-1": "partition de direction",
+
+  "languages-korensymfonie": "Symphonie de chœurs",
+  "languages-korensymfonie-p-1": "partition de direction",
+
+  "languages-naar-hoger-licht": "Vers une lumière céleste",
+  "languages-naar-hoger-licht-p-1": "pour violoncelle et orchestre,",
+
+  "languages-in-ballingschap": "En exil",
+  "languages-in-ballingschap-p-1": "poème symphonique,",
+
+  "languages-cello-concerto-in-d": "Concerto pour violoncelle en D",
+  "languages-cello-concerto-in-d-p-1": "",
+
+  "languages-larghetto-voor-orgel": "Larghetto pour orgue",
+
+  "languages-pastorales-voor-piano": "Pastorales pour piano",
+
+  "languages-prelude-en-fuga-voor-orgel": "Prelude et Fuga pour orgue",
+
+  "languages-sonate-in-a-voor-piano": "Sonata en A pour piano",
+
+  "languages-idylle-voor-piano": "Idylle pour piano"
 
 }

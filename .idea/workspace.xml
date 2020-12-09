@@ -2,143 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e252d62-0238-4d9b-a249-b3287405d212" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/A_GEEN_VOORBLAD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/Herderswijze.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/LDV_MISSA_BREVIS_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/LDV_MISSA_BREVIS_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/Psalmen_volkszang_geel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/Psalmen_volkszang_kerst.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/Psalmen_volkszang_pasen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/Vioolconcerto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/cantica.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/celloconcerto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/duo_cantus_mariani.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/fabelen_boek_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/fabelen_boek_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/fabelen_boek_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/idylle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/in_ballingschap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/in_te_speravi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/jezus_en_sint_janneken.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/kerstliederen_compleet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/korensymfonie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/landelijk_concerto_FS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/landelijk_concerto_piano.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/landelijk_trio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/landelijke_suite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/larghetto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/meizangen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/missa_honorem_angelorem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/missa_honorem_sti_josephi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/missa_pastorum.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/naar_hoger_licht.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/pastorale_in_d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/pastorale_koor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/prelude_en_fuga_voor_orgel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/serenade.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/sonate_in_A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partituren/voorbladen/te_deum.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lodewijk_de_vocht.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lodewijk_de_vocht.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/de.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-masthead1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/flags/belgium.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/flags/france.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/geen_partituur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/kamermuziek/2018-10-02 - LME Landelijk trio 7,5 - score.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/kamermuziek/2018-10-02 - LME Landelijk trio 7,5 - score.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/kamermuziek/LDV_LANDELIJK_CONCERTO_PIANO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/kamermuziek/LDV_LANDELIJK_CONCERTO_PIANO.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/kamermuziek/LME_2018-04-30_LDV-Herderswijze-orkest.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/kamermuziek/LME_2018-04-30_LDV-Herderswijze-orkest.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/kamermuziek/images/Herderswijze.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/kamermuziek/images/landelijk_concerto_piano.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/kamermuziek/images/landelijk_trio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/kamermuziek/images/serenade.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/kamermuziek/serenade_pianoreductie.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/kamermuziek/serenade_pianoreductie.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LDV_MISSA_BREVIS_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LDV_MISSA_BREVIS_2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LDV_MISSA_BREVIS_4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LDV_MISSA_BREVIS_4.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LDV_PASTORALE.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LDV_PASTORALE.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LDV_PSALMEN_GEEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LDV_PSALMEN_GEEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LDV_PSALMEN_KERST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LDV_PSALMEN_KERST.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LDV_PSALMEN_PASEN.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LDV_PSALMEN_PASEN.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LME 2017-01-024_LDV_Duo_Cantus_Mariani.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LME 2017-01-024_LDV_Duo_Cantus_Mariani.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LME2017-01-025_LDV_Cantica.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LME2017-01-025_LDV_Cantica.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LME2018-01-036_LDV_In_te_speravi.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LME2018-01-036_LDV_In_te_speravi.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LME2018-01-040_LDV_van_Jesus_en_Sint_Janneken.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LME2018-01-040_LDV_van_Jesus_en_Sint_Janneken.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LME2018-01-043_LDV_Landelijke_Suite.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LME2018-01-043_LDV_Landelijke_Suite.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LME_Kerstliederen_compleet.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LME_Kerstliederen_compleet.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LME_LDV_Fabelen_boek_1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LME_LDV_Fabelen_boek_1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LME_LDV_Fabelen_boek_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LME_LDV_Fabelen_boek_2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/LME_LDV_Fabelen_boek_3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/koormuziek/LME_LDV_Fabelen_boek_3.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/LDV_MISSA_BREVIS_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/LDV_MISSA_BREVIS_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/Psalmen_volkszang_geel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/Psalmen_volkszang_kerst.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/Psalmen_volkszang_pasen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/cantica.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/duo_cantus_mariani.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/fabelen_boek_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/fabelen_boek_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/fabelen_boek_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/in_te_speravi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/jezus_en_sint_janneken.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/kerstliederen_compleet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/landelijke_suite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/missa_honorem_angelorem.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/missa_honorem_sti_josephi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/missa_pastorum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/koormuziek/images/pastorale_koor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/not_cropped/meizangen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/LDV_KORENSYMFONIE.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/orkestmuziek/LDV_KORENSYMFONIE.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/LDV_LANDELIJK_CONCERTO_FS.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/orkestmuziek/LDV_LANDELIJK_CONCERTO_FS.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/LDV_MEIZANGEN.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/orkestmuziek/LDV_MEIZANGEN.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/LDV_TE_DEUM.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/orkestmuziek/LDV_TE_DEUM.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/LME2017-04-020_LDV_vioolconcerto.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/orkestmuziek/LME2017-04-020_LDV_vioolconcerto.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/images/Vioolconcerto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/images/celloconcerto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/images/in_ballingschap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/images/korensymfonie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/images/landelijk_concerto_FS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/images/meizangen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/orkestmuziek/images/te_deum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/LDV_LANDELIJK_CONCERTO_PIANO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/solomuziek/LDV_LANDELIJK_CONCERTO_PIANO.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/LDV_SONATE_PIANO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/solomuziek/LDV_SONATE_PIANO.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/LME2017-04-020_LDV_vioolconcerto.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/solomuziek/LME2017-04-020_LDV_vioolconcerto.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/LME2018-02-041_LDV_larghetto.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/solomuziek/LME2018-02-041_LDV_larghetto.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/LME2018-03-038_LDV_pastorales.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/solomuziek/LME2018-03-038_LDV_pastorales.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/LME2018-05-039_LDV_Prelude_en_fuga_orgel.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/solomuziek/LME2018-05-039_LDV_Prelude_en_fuga_orgel.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/LME201903047_Idylle_compleet.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/partituren/solomuziek/LME201903047_Idylle_compleet.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/images/Vioolconcerto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/images/celloconcerto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/images/idylle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/images/landelijk_concerto_piano.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/images/larghetto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/images/naar_hoger_licht.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/images/pastorale_in_d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/images/prelude_en_fuga_voor_orgel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partituren/solomuziek/images/sonate_in_A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/fullsize/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/fullsize/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/fullsize/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/fullsize/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/fullsize/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/fullsize/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/fullsize/b1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/fullsize/b2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/thumbnails/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/thumbnails/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/thumbnails/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/thumbnails/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/thumbnails/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/thumbnails/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/thumbnails/a2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/thumbnails/b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/creative.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/creative.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/languages.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/languages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/nl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jquery/jquery.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/nl.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,12 +24,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aLeVHffZps1b19u49Hh1rL3Df5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -213,37 +88,18 @@
       <workItem from="1598532365017" duration="1538000" />
       <workItem from="1606211569704" duration="6775000" />
       <workItem from="1606576803032" duration="15586000" />
-      <workItem from="1606916065399" duration="6035000" />
+      <workItem from="1606916065399" duration="6430000" />
+      <workItem from="1606932632529" duration="6292000" />
+      <workItem from="1606941349640" duration="26107000" />
+      <workItem from="1607085017527" duration="187000" />
+      <workItem from="1607452922361" duration="6194000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1878" height="299" key="GridCell.Tab.0.bottom" timestamp="1598532906468">
-      <screen x="1440" y="-73" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="299" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-73.1920.1080@1440.-73.1920.1080" timestamp="1598532906468" />
-    <state width="1878" height="299" key="GridCell.Tab.0.center" timestamp="1598532906464">
-      <screen x="1440" y="-73" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="299" key="GridCell.Tab.0.center/0.0.1440.900/1440.-73.1920.1080@1440.-73.1920.1080" timestamp="1598532906464" />
-    <state width="1878" height="299" key="GridCell.Tab.0.left" timestamp="1598532906462">
-      <screen x="1440" y="-73" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="299" key="GridCell.Tab.0.left/0.0.1440.900/1440.-73.1920.1080@1440.-73.1920.1080" timestamp="1598532906462" />
-    <state width="1878" height="299" key="GridCell.Tab.0.right" timestamp="1598532906466">
-      <screen x="1440" y="-73" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="299" key="GridCell.Tab.0.right/0.0.1440.900/1440.-73.1920.1080@1440.-73.1920.1080" timestamp="1598532906466" />
-    <state x="1909" y="103" key="SettingsEditor" timestamp="1606652855974">
-      <screen x="1440" y="-73" width="1920" height="1080" />
-    </state>
-    <state x="1909" y="103" key="SettingsEditor/0.0.1440.900/1440.-73.1920.1080@1440.-73.1920.1080" timestamp="1606652855974" />
-    <state x="2065" y="168" width="896" height="677" key="search.everywhere.popup" timestamp="1606919591407">
-      <screen x="1440" y="-73" width="1920" height="1080" />
-    </state>
-    <state x="2065" y="168" width="896" height="677" key="search.everywhere.popup/0.0.1440.900/1440.-73.1920.1080@1440.-73.1920.1080" timestamp="1606919591407" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
