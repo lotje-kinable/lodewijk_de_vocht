@@ -1,44 +1,63 @@
-function firstLoadLanguage(lng)
-{
-    switch (lng)
-    {
-        case "nl":
-            $.getJSON('languages/nl.json', function(data) {
+function chooseLang(lng){
+    switch (lng) {
+        case "NL":
+
+            localStorage.setItem('language', lng);
+            setSpanLanguage('language-picker-not-mobile', 'NL');
+            setSpanLanguage('language-picker-mobile', 'NL');
+
+            $.getJSON('languages/nl.json', function (data) {
                 fillIn(data);
+                // $('#contents').text(data.test);
             });
+
             document.getElementById("concertagenda").style.display = "block";
             document.getElementById("languages-concertagenda").style.display = "block";
 
             enableCannotListenButtons();
 
             break;
-        case "en":
-            $.getJSON('languages/en.json', function(data) {
+
+        case "EN":
+            hideConcertAgenda();
+
+            localStorage.setItem('language', lng);
+
+            setSpanLanguage('language-picker-not-mobile', 'EN');
+            setSpanLanguage('language-picker-mobile', 'EN');
+
+            $.getJSON('languages/en.json', function (data) {
                 fillIn(data);
             });
-            document.getElementById("concertagenda").style.display = "none";
-            document.getElementById("languages-concertagenda").style.display = "none";
-
-            disableCannotListenButtons();
-            break;
-
-        case "fr":
-            $.getJSON('languages/fr.json', function(data) {
-                fillIn(data);
-            });
-            document.getElementById("concertagenda").style.display = "none";
-            document.getElementById("languages-concertagenda").style.display = "none";
 
 
             disableCannotListenButtons();
             break;
 
-        case "de":
-            $.getJSON('languages/de.json', function(data) {
+        case "FR":
+            hideConcertAgenda();
+
+            localStorage.setItem('language', lng);
+            setSpanLanguage('language-picker-not-mobile', ' FR');
+            setSpanLanguage('language-picker-mobile', ' FR');
+
+            $.getJSON('languages/fr.json', function (data) {
                 fillIn(data);
             });
-            document.getElementById("concertagenda").style.display = "none";
-            document.getElementById("languages-concertagenda").style.display = "none";
+
+            disableCannotListenButtons();
+            break;
+
+        case "DE":
+            hideConcertAgenda();
+
+            localStorage.setItem('language', lng);
+            setSpanLanguage('language-picker-not-mobile', ' DE');
+            setSpanLanguage('language-picker-mobile', ' DE');
+
+            $.getJSON('languages/de.json', function (data) {
+                fillIn(data);
+            });
 
             disableCannotListenButtons();
             break;
@@ -68,79 +87,12 @@ function fillIn(data){
     })
 }
 
-function changeLanguage(clicked_element_id)
-{
-    const element = document.getElementById(clicked_element_id);
+function setSpanLanguage(id, lng){
 
+    let span = document.getElementById(id);
 
-    let lng = element.options[element.selectedIndex].value;
-
-    switch (lng)
-    {
-        case "nl":
-
-            localStorage.setItem('language', lng);
-            $("#languages-not-mobile").val(lng);
-            $("#languages-mobile").val(lng);
-
-            $.getJSON('languages/nl.json', function(data) {
-                fillIn(data);
-                // $('#contents').text(data.test);
-            });
-
-            document.getElementById("concertagenda").style.display = "block";
-            document.getElementById("languages-concertagenda").style.display = "block";
-
-            enableCannotListenButtons();
-
-            break;
-        case "en":
-            hideConcertAgenda();
-
-            localStorage.setItem('language', lng);
-            $("#languages-not-mobile").val(lng);
-            $("#languages-mobile").val(lng);
-
-            $.getJSON('languages/en.json', function(data) {
-                fillIn(data);
-            });
-
-
-            disableCannotListenButtons();
-            break;
-
-        case "fr":
-            hideConcertAgenda()
-
-            localStorage.setItem('language', lng);
-            $("#languages-not-mobile").val(lng);
-            $("#languages-mobile").val(lng);
-
-            $.getJSON('languages/fr.json', function(data) {
-                //do stuff with your data here
-                fillIn(data);
-            });
-
-
-            disableCannotListenButtons();
-            break;
-
-        case "de":
-            hideConcertAgenda();
-
-            $.getJSON('languages/de.json', function(data) {
-                //do stuff with your data here
-                fillIn(data);
-                // $('#contents').text(data.test);
-            });
-
-            disableCannotListenButtons();
-
-            localStorage.setItem('language', lng);
-            $("#languages-not-mobile").val(lng);
-            $("#languages-mobile").val(lng);
-            break;
-    }
+    span.removeChild(span.childNodes[0]);
+    span.appendChild(document.createTextNode(lng));
 }
 
 function hideConcertAgenda(){

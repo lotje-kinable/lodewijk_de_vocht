@@ -95,8 +95,8 @@
 $(document).ready(function() {
 	if (localStorage.getItem('language') !== null) {
 		const lng = localStorage.getItem('language');
-		$("#languages-not-mobile").val(lng);
-		$("#languages-mobile").val(lng);
-		firstLoadLanguage(lng);
+		chooseLang(lng);
+	} else {
+		chooseLang('NL');
 	}
 });

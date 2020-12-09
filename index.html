@@ -38,19 +38,35 @@
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Lodewijk De Vocht</a>
 
-                <ul class="navbar-nav mr-0 d-block d-sm-none pulling-right">
-                    <li class="nav-item dropdown">
-                        <label for="languages-mobile"></label>
-                        <select class="dropdown-toggle border-0 rounded bg-transparent" name="languages-mobile" id="languages-mobile" onchange="changeLanguage('languages-mobile')">
-                            <option class="dropdown-item btn" value="nl">&#127760; &nbsp; NL</option>
-                            <option class="dropdown-item btn" value="fr">&#127760; &nbsp; FR</option>
-                            <option class="dropdown-item btn" value="en">&#127760; &nbsp; EN</option>
-                            <option class="dropdown-item btn" value="de">&#127760; &nbsp; DE</option>
-                        </select>
-                    </li>
-                </ul>
+        <ul class="navbar-nav mr-0 d-block d-sm-none">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"
+                   href="#" id="navbarDropdownLanguagesMobile"
+                   role="button"
+                   data-toggle="dropdown"
+                   aria-expanded="false">
+                    &#127760;&nbsp;<span id="language-picker-mobile" class="languages-language">NL</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownLanguagesNotMobile">
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="chooseLang('NL')">
+                        <span class="languages-nederlands">&#127760; &nbsp;NL</span>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="chooseLang('EN')">
+                        <span class="languages-engels">&#127760; &nbsp;EN</span>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="chooseLang('FR')">
+                        <span class="languages-frans">&#127760; &nbsp;FR</span>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="chooseLang('DE')">
+                        <span class="languages-duits">&#127760; &nbsp;DE</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
         <button
-                class="navbar-toggler navbar-toggler-right"
+                class="navbar-toggler navbar-toggler-right mr-1"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarResponsive"
@@ -59,6 +75,8 @@
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
@@ -116,15 +134,18 @@
                         </a>
                     </div>
                 </li>
-                <li id="languages-concertagenda" class="nav-item"> <a class="nav-link js-scroll-trigger" href="#concertagenda">
-                    <span class="languages-concertagenda">Concertagenda</span>
 
-                </a>
+                <li id="languages-concertagenda" class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#concertagenda">
+                        <span class="languages-concertagenda">Concertagenda</span>
+                    </a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#het-fonds">
                         <span class="languages-het-fonds">Het fonds</span></a>
                 </li>
+
                 <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
 
                 <li class="nav-item">
@@ -135,13 +156,27 @@
                 </li>
 
                 <li class="nav-item dropdown d-none d-sm-block">
-                    <label for="languages-not-mobile"></label>
-                    <select class="languages border-0 rounded bg-transparent" name="languages-not-mobile" id="languages-not-mobile" onchange="changeLanguage('languages-not-mobile')">
-                        <option class="dropdown-item nav-link btn" value="nl">&#127760; &nbsp; NL</option>
-                        <option class="dropdown-item  nav-link btn" value="fr">&#127760; &nbsp; FR</option>
-                        <option class="dropdown-item  nav-link btn" value="en">&#127760; &nbsp; EN</option>
-                        <option class="dropdown-item  nav-link btn" value="de">&#127760; &nbsp; DE</option>
-                    </select>
+                    <a class="nav-link dropdown-toggle"
+                       href="#" id="navbarDropdownLanguagesNotMobile"
+                       role="button"
+                       data-toggle="dropdown"
+                       aria-expanded="false">
+                        &#127760;&nbsp;<span id="language-picker-not-mobile" class="languages-language">NL</span>
+                    </a>
+                    <div class="dropdown-menu w-25" aria-labelledby="navbarDropdownLanguagesNotMobile">
+                        <a class="dropdown-item" href="javascript:void(0)" onclick="chooseLang('NL')">
+                            <span class="languages-nederlands" >&#127760; &nbsp;NL</span>
+                        </a>
+                        <a class="dropdown-item" href="javascript:void(0)" onclick="chooseLang('EN')">
+                            <span class="languages-engels" >&#127760; &nbsp;EN</span>
+                        </a>
+                        <a class="dropdown-item" href="javascript:void(0)" onclick="chooseLang('FR')">
+                            <span class="languages-frans">&#127760; &nbsp;FR</span>
+                        </a>
+                        <a class="dropdown-item" href="javascript:void(0)" onclick="chooseLang('DE')">
+                            <span class="languages-duits">&#127760; &nbsp;DE</span>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -1802,14 +1837,14 @@
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous">
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"-->
+<!--        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"-->
+<!--        crossorigin="anonymous">-->
 
-</script>
+<!--</script>-->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="" ></script>
 <script src="js/languages.js" type="text/javascript"></script>
 <script src="js/creative.js"></script>
 

@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e252d62-0238-4d9b-a249-b3287405d212" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/languages/de.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/creative.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/creative.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/languages.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/languages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/nl.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +41,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -92,7 +88,7 @@
       <workItem from="1606932632529" duration="6292000" />
       <workItem from="1606941349640" duration="26107000" />
       <workItem from="1607085017527" duration="187000" />
-      <workItem from="1607452922361" duration="6194000" />
+      <workItem from="1607452922361" duration="13054000" />
     </task>
     <servers />
   </component>
