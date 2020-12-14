@@ -59,6 +59,14 @@ header.masthead p {
 	font-size:0.9rem;
 }
 
+.page-section p {
+    font-size:0.9rem;
+}
+
+.fullsize p {
+    font-size:0.9rem;
+}
+
 section.fullsize {
 	padding-top: 10rem;
 	padding-bottom: calc(10rem - 72px);
